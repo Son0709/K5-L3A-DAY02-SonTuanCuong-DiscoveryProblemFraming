@@ -14,7 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Lê Hoàng Sơn | 2A202603662 | | https://github.com/Son0709 |
 | 2 | | | | https://github.com/cuong281 |
-| 3 | | | | https://github.com/ha1tuan |
+| 3 | Vũ Hải Tuấn| 2A202603689 | | https://github.com/ha1tuan |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -85,7 +85,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 -
 
 
-### HoVaTen-MSSV
+### Vũ Hải Tuấn-2A202603689
 
 **Phần việc phụ trách:**
 

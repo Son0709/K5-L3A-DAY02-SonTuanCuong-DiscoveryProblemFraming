@@ -178,7 +178,7 @@ Nhóm chưa có lý do tự xây một công cụ mới cho bước tính %. Hư
 
 **Kết luận Research**
 - Thực trạng: Phần lớn quy trình đã có công cụ làm tốt (Jira, Linear, Standuply). Không có lý do để tự xây agent.
-- Hướng hợp lý: Rule lấy số liệu thô → AI soạn nháp narrative (dùng Atlassian Rovo hoặc prompt chuẩn) → PM kiểm duyệt → PM gửi.
+- Hướng hợp lý: Rule lấy số liệu thô → AI soạn nháp narrative (dùng Atlassian Rovo hoặc prompt chuẩn) → trưởng nhóm kiểm duyệt → trưởng nhóm gửi.
 - Điểm đổi mới: Khác hoàn toàn định hướng ban đầu ("xây công cụ AI viết báo cáo"), nhóm thu hẹp AI lại chỉ làm nhiệm vụ soạn nháp nhận định từ dữ liệu sẵn có.
 
 ---
@@ -203,7 +203,7 @@ Hệ quả (từ phỏng vấn nhóm trưởng): gần ngày bàn giao mới ph�
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | Người giao việc (nhóm trưởng, PM) | Yêu cầu của dự án | Nhiệm vụ gửi trong chat, chưa có tiêu chí "xong" | 3 phút/lần giao | Thường chỉ mô tả bằng lời, không chia đầu việc nhỏ |
+| 1 | Người giao việc (trưởng nhóm) | Yêu cầu của dự án | Nhiệm vụ gửi trong chat, chưa có tiêu chí "xong" | 3 phút/lần giao | Thường chỉ mô tả bằng lời, không chia đầu việc nhỏ |
 | 2 | Thành viên nhận việc | Nhiệm vụ được giao | Phần việc đang làm dở | Ví dụ 120 phút/đợt làm | Không ai theo dõi trong lúc làm |
 | 3 | Người giao việc | Nhu cầu biết tiến độ | Tin nhắn hỏi tiến độ | 4 phút/lần; 2–3 lần/ngày | Phải chủ động hỏi, thành viên ít tự báo |
 | 4 | Thành viên | Cảm nhận của bản thân về phần đã làm | Câu trả lời ước lượng ("sắp xong") | 10 phút chờ và hỏi lại mỗi lần | Không có đơn vị chung để tính "%" nên câu trả lời mơ hồ; chuyển giao: thành viên → người giao việc |
@@ -217,7 +217,7 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 ```text
 TƯƠNG LAI — 4 bước: 1 Rule, 1 AI, 2 Con người
 
-[1 Giao nhiệm vụ chuẩn hóa] → [2 Rule thu thập task thô] → [3 AI soạn nháp narrative] → [4 PM kiểm duyệt và gửi đi]
+[1 Giao nhiệm vụ chuẩn hóa] → [2 Rule thu thập task thô] → [3 AI soạn nháp narrative] → [4 Trưởng nhóm kiểm duyệt và gửi đi]
 ```
 
 | Bước | Actor / Cơ chế | Input | Output | Phân loại | Ghi chú / Boundary & Fallback |
@@ -225,19 +225,19 @@ TƯƠNG LAI — 4 bước: 1 Rule, 1 AI, 2 Con người
 | 1 | Người giao việc | Yêu cầu dự án | Nhiệm vụ chia thành sub-task có tiêu chí hoàn thành rõ ràng | Con người | Boundary: con người định nghĩa task; AI không tự đổi scope hoặc deadline. |
 | 2 | Rule | Trạng thái task trong bảng công việc | Số liệu thô: % task hoàn thành, số lượng còn lại, tiến độ theo người | Rule | Tự động thu thập theo thời gian thực hoặc theo định kỳ; không suy diễn ngữ nghĩa. |
 | 3 | AI (Rovo / prompt chuẩn) | Dữ liệu thô từ Bước 2 | Bản nháp nhận định tiến độ và % đóng góp | AI | AI chỉ tóm tắt, giải thích ngắn gọn và viết narrative; không thay đổi dữ liệu gốc hoặc tự quyết định deadline. |
-| 4 | PM | Bản nháp từ AI | Báo cáo tiến độ đã được kiểm duyệt và gửi đi | Con người (HITL) | Fallback: nếu AI sai, PM sửa tay bằng template trắng hoặc dùng dashboard trực quan thay cho AI. |
+| 4 | Trưởng nhóm | Bản nháp từ AI | Báo cáo tiến độ đã được kiểm duyệt và gửi đi | Con người (HITL) | Fallback: nếu AI sai, trưởng nhóm sửa tay bằng template trắng hoặc dùng dashboard trực quan thay cho AI. |
 
-**Bottleneck chính sau khi cải thiện:** Giảm từ việc “đoán % bằng cảm tính” sang “xem dữ liệu thô và PM duyệt lịch sử” — vẫn cần người thực hiện cập nhật task 1 cách sơ bộ và rõ ràng để dữ liệu đáng tin. |
+**Bottleneck chính sau khi cải thiện:** Giảm từ việc “đoán % bằng cảm tính” sang “xem dữ liệu thô và trưởng nhóm duyệt lịch sử” — vẫn cần người thực hiện cập nhật task 1 cách sơ bộ và rõ ràng để dữ liệu đáng tin. |
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
 | Số bước | 5 | 4 | Theo sơ đồ 4.1 và 4.2. Sơ đồ 4.2 không liệt kê "thành viên làm việc" và "thành viên cập nhật task"; nếu tính cả hai thì là 5 → 6. Lợi ích nằm ở thời gian và độ tin cậy của %, không nằm ở số bước |
-| Tổng thời gian (không tính 120' làm việc) | 34–51'/ngày + 3'/lần giao | khoảng 8'/ngày + khoảng 10'/lần giao | Trước: (4' hỏi + 10' chờ + 3' quy đổi) × 2–3 lần/ngày. Sau: Rule + AI khoảng 1', PM duyệt khoảng 5', thành viên cập nhật task khoảng 2', 1 lần/ngày. Giao việc lâu hơn vì phải chia sub-task và ghi tiêu chí "xong" |
-| Số bước thủ công | 5/5 | 2/4 | Còn lại: người giao việc chia task và PM duyệt. Ngoài 4 bước, thành viên vẫn phải cập nhật task bằng tay |
-| Bottleneck chính | Bước 4: thành viên trả lời "sắp xong" theo cảm tính, 10' chờ và hỏi lại mỗi lần; lệch chỉ lộ ra sát ngày bàn giao, tốn thêm 1–2 ngày để bù | Thành viên cập nhật task đúng và đều; PM duyệt nháp khoảng 5' | PM duyệt là điểm kiểm soát chất lượng nên chấp nhận được. Việc cập nhật đều thuộc giả định #3, chưa kiểm chứng, sẽ theo dõi trong pilot |
-| Rủi ro mới phát sinh | — | (1) AI diễn giải sai hoặc bịa nhận định; (2) task bị đánh dấu "xong" quá sớm khiến % sai nhưng trông như chính xác; (3) Rule tính mọi task ngang nhau nên % đóng góp lệch khi task khác độ lớn; (4) thành viên thấy bị giám sát | (1) AI không đổi dữ liệu gốc, PM duyệt trước khi gửi; nếu sai thì dùng template trắng hoặc dashboard. (2) Tiêu chí "xong" đặt từ bước 1. (3) Người giao việc chia sub-task cỡ tương đương. (4) 1/4 người được phỏng vấn đã lo bị đo đếm thành áp lực, cần kiểm chứng thêm |
+| Tổng thời gian (không tính 120' làm việc) | 34–51'/ngày + 3'/lần giao | khoảng 8'/ngày + khoảng 10'/lần giao | Trước: (4' hỏi + 10' chờ + 3' quy đổi) × 2–3 lần/ngày. Sau: Rule + AI khoảng 1', trưởng nhóm duyệt khoảng 5', thành viên cập nhật task khoảng 2', 1 lần/ngày. Giao việc lâu hơn vì phải chia sub-task và ghi tiêu chí "xong" |
+| Số bước thủ công | 5/5 | 2/4 | Còn lại: người giao việc chia task và trưởng nhóm duyệt. Ngoài 4 bước, thành viên vẫn phải cập nhật task bằng tay |
+| Bottleneck chính | Bước 4: thành viên trả lời "sắp xong" theo cảm tính, 10' chờ và hỏi lại mỗi lần; lệch chỉ lộ ra sát ngày bàn giao, tốn thêm 1–2 ngày để bù | Thành viên cập nhật task đúng và đều; trưởng nhóm duyệt nháp khoảng 5' | Trưởng nhóm duyệt là điểm kiểm soát chất lượng nên chấp nhận được. Việc cập nhật đều thuộc giả định #3, chưa kiểm chứng, sẽ theo dõi trong pilot |
+| Rủi ro mới phát sinh | — | (1) AI diễn giải sai hoặc bịa nhận định; (2) task bị đánh dấu "xong" quá sớm khiến % sai nhưng trông như chính xác; (3) Rule tính mọi task ngang nhau nên % đóng góp lệch khi task khác độ lớn; (4) thành viên thấy bị giám sát | (1) AI không đổi dữ liệu gốc, trưởng nhóm duyệt trước khi gửi; nếu sai thì dùng template trắng hoặc dashboard. (2) Tiêu chí "xong" đặt từ bước 1. (3) Người giao việc chia sub-task cỡ tương đương. (4) 1/4 người được phỏng vấn đã lo bị đo đếm thành áp lực, cần kiểm chứng thêm |
 
 Cột "Trước" lấy từ mục 4.1. Cột "Sau" là ước lượng của nhóm vì chưa chạy thử, sẽ bấm giờ trong pilot để xác nhận.
 
@@ -312,7 +312,7 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
+| **Actor** | Trưởng nhóm đồ án sinh viên hoặc dự án nhỏ (3–6 thành viên), người giao việc và chịu trách nhiệm bàn giao đúng hạn |
 | **Quy trình** | |
 | **Bottleneck** | |
 | **Impact** | |

@@ -18,15 +18,15 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Sơn | Khi bắt đầu mỗi tuần, tôi muốn gom tất cả deadline trong tuần từ nhiều môn vào 1 chỗ, để dễ dàng nắm bắt được lịch và không bỏ sót môn nào. | Tôi, sinh viên học nhiều môn | Bước 2: tìm thông báo rải rác trong chat, 10 phút/lần | (Cường): Làm sao để gom lại được tất cả deadline trong nhiều ứng dụng. (Tuấn): Làm sao để có thể biết đâu là deadline đâu là bài tập |
-| 2 | Sơn | Khi tôi giao một nhiệm vụ cho thành viên trong nhóm và họ đã làm một khoảng thời gian, tôi muốn biết họ đã xong bao nhiêu % nhiệm vụ và phần đó đóng góp bao nhiêu % vào dự án, để kịp điều chỉnh việc trước deadline | PM, Leader và các thành viên nhận việc | Bước 4–5: không có đơn vị chung để tính "%" nên câu trả lời mơ hồ, 10 phút chờ và hỏi lại mỗi lần; 2-3 lần hỏi lại/ngày | (Tuấn): Bổ sung chức năng: cá nhân dành thời gian bao lâu để hoàn thiện phần việc của mình được giao. (Tuấn & Cường) Làm sao để thành viên có thể sắp xếp được lịch dù đã có ứng dụng|
-| 3 | Sơn | Khi tôi định học tiếng Trung 2 tiếng mỗi ngày, tôi muốn có sẵn khung giờ còn trống trong tuần, để giữ được thói quen đều thay vì bỏ buổi | Tôi | Bước 2: không xếp được khung giờ cố định, 60-75 phút/lần; chỉ thực hiện được 7-8/14 buổi trong 2 tuần gần nhất | (Tuấn & Cường): trên thị trường đã có nhiều ứng dụng tương tự như vậy, và nguyên nhân chính vẫn là việc nhàm chán do học 1 mình |
-| 4 | Tuấn | Khi có một ý tưởng mới còn mơ hồ, tôi muốn có sẵn user story và tiêu chí nghiệm thu rõ ràng trước khi code, để AI không code sai hướng rồi phải làm lại | Vibe Coder, Khách hàng nhận sản phẩm | Bước 4–6, vòng “sinh code, thấy sai, giải thích lại”: yêu cầu chỉ rõ dần sau khi đã có code sai, nên tốn công gấp đôi | (Sơn & Cường): Vậy khác biệt gì so với những con AI hiện tại như ChatGPT, Claude,... |
-| 5 | Tuấn | Khi nhận yêu cầu từ khách hàng, tôi muốn tìm được skill phù hợp hoặc tạo nhanh skill mới đúng yêu cầu đó, để AI làm đúng quy trình ngay từ đầu thay vì tôi giải thích lại mỗi lần | Vibe Coder | Bước 2–3 (tìm không ra hoặc không biết skill nào vừa) và bước 4–6 (không có cách kiểm thử skill ngoài chạy thật) | (Cường): nếu tạo skill thì những con AI hiện tại vẫn có khả năng xảy ra, thì liệu có thể sinh skill tốt hơn không. (Sơn): Số liệu thống kê nào có thể đánh giá được skill sinh ra. |
+| 1 | Sơn | Khi bắt đầu mỗi tuần, tôi muốn gom tất cả deadline trong tuần từ nhiều môn vào 1 chỗ, để dễ dàng nắm bắt được lịch và không bỏ sót môn nào. | Tôi, sinh viên học nhiều môn | Bước 2: tìm thông báo rải rác trong chat, 10 phút/lần | (Cương): Làm sao để gom lại được tất cả deadline trong nhiều ứng dụng. (Tuấn): Làm sao để có thể biết đâu là deadline đâu là bài tập |
+| 2 | Sơn | Khi tôi giao một nhiệm vụ cho thành viên trong nhóm và họ đã làm một khoảng thời gian, tôi muốn biết họ đã xong bao nhiêu % nhiệm vụ và phần đó đóng góp bao nhiêu % vào dự án, để kịp điều chỉnh việc trước deadline | PM, Leader và các thành viên nhận việc | Bước 4–5: không có đơn vị chung để tính "%" nên câu trả lời mơ hồ, 10 phút chờ và hỏi lại mỗi lần; 2-3 lần hỏi lại/ngày | (Tuấn): Bổ sung chức năng: cá nhân dành thời gian bao lâu để hoàn thiện phần việc của mình được giao. (Tuấn & Cương) Làm sao để thành viên có thể sắp xếp được lịch dù đã có ứng dụng|
+| 3 | Sơn | Khi tôi định học tiếng Trung 2 tiếng mỗi ngày, tôi muốn có sẵn khung giờ còn trống trong tuần, để giữ được thói quen đều thay vì bỏ buổi | Tôi | Bước 2: không xếp được khung giờ cố định, 60-75 phút/lần; chỉ thực hiện được 7-8/14 buổi trong 2 tuần gần nhất | (Tuấn & Cương): trên thị trường đã có nhiều ứng dụng tương tự như vậy, và nguyên nhân chính vẫn là việc nhàm chán do học 1 mình |
+| 4 | Tuấn | Khi có một ý tưởng mới còn mơ hồ, tôi muốn có sẵn user story và tiêu chí nghiệm thu rõ ràng trước khi code, để AI không code sai hướng rồi phải làm lại | Vibe Coder, Khách hàng nhận sản phẩm | Bước 4–6, vòng “sinh code, thấy sai, giải thích lại”: yêu cầu chỉ rõ dần sau khi đã có code sai, nên tốn công gấp đôi | (Sơn & Cương): Vậy khác biệt gì so với những con AI hiện tại như ChatGPT, Claude,... |
+| 5 | Tuấn | Khi nhận yêu cầu từ khách hàng, tôi muốn tìm được skill phù hợp hoặc tạo nhanh skill mới đúng yêu cầu đó, để AI làm đúng quy trình ngay từ đầu thay vì tôi giải thích lại mỗi lần | Vibe Coder | Bước 2–3 (tìm không ra hoặc không biết skill nào vừa) và bước 4–6 (không có cách kiểm thử skill ngoài chạy thật) | (Cương): nếu tạo skill thì những con AI hiện tại vẫn có khả năng xảy ra, thì liệu có thể sinh skill tốt hơn không. (Sơn): Số liệu thống kê nào có thể đánh giá được skill sinh ra. |
 | 6 | Tuấn | Khi PM hỏi tính năng này mất bao lâu, họ muốn có ước lượng đáng tin, để cam kết với khách | PM, Khách hàng, Dev | Bước 2: ước lượng dựa trên bản demo, bỏ sót phần “ẩn” sau demo | (Sơn): "Thời gian đáng tin" lấy từ những thông số nào |
-| 7 | Cường | Khi mở notebook để bắt đầu một bài lab mới, tôi muốn biết đoạn code đầu tiên cần viết, để bắt tay vào làm ngay thay vì đọc đi đọc lại đề | Tôi, học viên khóa AI thực chiến, mới học Python/ML, làm lab trên Google Colab | Bước 3, nghĩ cách chia bài thành các bước code: khoảng 8 phút/bài (ước lượng). Hiểu từng khái niệm nhưng chưa biết nên code phần nào trước, phần nào sau | (Sơn): có sinh code gợi ý không hay là chỉ sinh câu hỏi ôn tập. (Tuấn): Nếu bài lab không có nội dung trong bài giảng thì sao? |
-| 8 | Cường | Khi chuẩn bị trước buổi học, tôi muốn nắm được ý chính của tài liệu dài, để vào lớp theo kịp bài | Tôi, học viên khóa AI thực chiến, học 4–5 buổi/tuần, chưa có nhiều nền tảng thực tế về AI | Bước 4, tra khái niệm chưa hiểu: khoảng 30 phút/buổi (ước lượng). Gặp khái niệm mới phải dừng đọc để tra, tra xong quay lại đọc tiếp | (Sơn): Đọc ở đây là nắm rõ hết lý thuyết, hay chỉ cần biết trong slide có những phần nào quan trọng? (Tuấn): Có tổng hợp lại kiến thức không |
-| 9 | Cường | Khi tự viết lại một đoạn code từng chạy được nhờ tham khảo, tôi muốn nhớ được cách viết, để không phụ thuộc vào code có sẵn | Tôi, học viên mới học AI, thường tham khảo code mẫu hoặc code do ChatGPT gợi ý khi bị kẹt | Bước 2, tự viết lại: 10–15 phút cố gắng nhưng không viết được, phải bỏ cuộc và mở lại code cũ (ước lượng) | (Sơn): AI có tự sinh code không hay chỉ gợi ý.|
+| 7 | Cương | Khi mở notebook để bắt đầu một bài lab mới, tôi muốn biết đoạn code đầu tiên cần viết, để bắt tay vào làm ngay thay vì đọc đi đọc lại đề | Tôi, học viên khóa AI thực chiến, mới học Python/ML, làm lab trên Google Colab | Bước 3, nghĩ cách chia bài thành các bước code: khoảng 8 phút/bài (ước lượng). Hiểu từng khái niệm nhưng chưa biết nên code phần nào trước, phần nào sau | (Sơn): có sinh code gợi ý không hay là chỉ sinh câu hỏi ôn tập. (Tuấn): Nếu bài lab không có nội dung trong bài giảng thì sao? |
+| 8 | Cương | Khi chuẩn bị trước buổi học, tôi muốn nắm được ý chính của tài liệu dài, để vào lớp theo kịp bài | Tôi, học viên khóa AI thực chiến, học 4–5 buổi/tuần, chưa có nhiều nền tảng thực tế về AI | Bước 4, tra khái niệm chưa hiểu: khoảng 30 phút/buổi (ước lượng). Gặp khái niệm mới phải dừng đọc để tra, tra xong quay lại đọc tiếp | (Sơn): Đọc ở đây là nắm rõ hết lý thuyết, hay chỉ cần biết trong slide có những phần nào quan trọng? (Tuấn): Có tổng hợp lại kiến thức không |
+| 9 | Cương | Khi tự viết lại một đoạn code từng chạy được nhờ tham khảo, tôi muốn nhớ được cách viết, để không phụ thuộc vào code có sẵn | Tôi, học viên mới học AI, thường tham khảo code mẫu hoặc code do ChatGPT gợi ý khi bị kẹt | Bước 2, tự viết lại: 10–15 phút cố gắng nhưng không viết được, phải bỏ cuộc và mở lại code cũ (ước lượng) | (Sơn): AI có tự sinh code không hay chỉ gợi ý.|
 
 ### 2.2. Cluster
 
@@ -75,7 +75,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 **Vì sao chọn:** Cả nhóm đều làm việc nhóm nên cùng gặp vấn đề này (không chỉ một người); bottleneck là một bước cụ thể (bước 4–5: thành viên trả lời tiến độ bằng cảm tính, người giao việc tự quy đổi %); đo được bằng số lần hỏi lại tiến độ (2–3 lần/ngày), số phút chờ (10 phút/lần) và độ lệch giữa % báo cáo với % thực tế; nhóm hiểu domain vì đang trải nghiệm hằng ngày.
 
 **Vì sao loại các candidate còn lại:** 
-- #3 (thói quen học tiếng Trung): Tuấn và Cường chỉ ra đã có nhiều ứng dụng tương tự và nguyên nhân chính là nhàm chán khi học một mình, không phải xếp lịch.
+- #3 (thói quen học tiếng Trung): Tuấn và Cương chỉ ra đã có nhiều ứng dụng tương tự và nguyên nhân chính là nhàm chán khi học một mình, không phải xếp lịch.
 - #4, #5, #7, #9 (liên quan đến code và skill): đã có công cụ AI như ChatGPT và Claude làm gần đúng việc đó; chưa trả lời được khác biệt so với công cụ hiện có.
 
 **Xử lý bất đồng (nếu có):** Điểm tổng của #1 (28) cao hơn #2 (27) một điểm, nhưng nhóm chọn #2. Lý do cần nhóm xác nhận bằng lập luận thật của mình, gợi ý: #1 có thể giải bằng một lịch chung duy nhất (No AI/Rule) và không còn nhiều điều để kiểm chứng, còn #2 vẫn chưa rõ "%" nên định nghĩa thế nào, đây là câu hỏi đáng kiểm chứng ở CP4. 
@@ -88,22 +88,49 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Người giao việc ở nhóm khác cũng phải hỏi lại tiến độ nhiều lần mỗi ngày, mất thời gian chờ trả lời | Value | 5 | 2 | ✅ |
+| 2 | Bottleneck là thiếu đơn vị chung để tính "%", không phải thiếu công cụ theo dõi việc (bảng task có sẵn chưa giải quyết được) | Value | 5 | 2 | ✅ |
+| 3 | Thành viên chấp nhận cập nhật tiến độ đều đặn (ví dụ cuối mỗi buổi làm) mà không thấy bị giám sát | Usability | 4 | 1 | ✅ |
+| 4 | Phần lớn nhiệm vụ nhóm chia được thành đầu việc nhỏ có tiêu chí "xong" rõ ràng để tính % | Feasibility | 5 | 2 | ✅ |
+| 5 | % thành viên tự báo lệch đáng kể so với % thực tế (nếu lệch ít thì không đáng giải) | Value | 4 | 2 | Sau |
+| 6 | Người giao việc sẽ duy trì cách theo dõi mới đều đặn, không bỏ sau vài tuần | Viability | 3 | 1 | Sau |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: **#1, #2, #3, #4** 
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: Phỏng vấn. Mỗi thành viên phỏng vấn 1 người, ghi 1 Interview Snapshot ngay sau buổi phỏng vấn.
+
+**Kịch bản câu hỏi dùng chung**:
+
+1. Lần gần nhất bạn giao hoặc nhận một việc trong dự án nhóm là khi nào? Kể lại từng bước chuyện đó diễn ra.
+2. Sau khi giao việc, bạn biết việc đó xong tới đâu bằng cách nào? Lần gần nhất bạn hỏi lại tiến độ là khi nào, mất bao lâu để có câu trả lời?
+3. Có lần nào người ta báo "gần xong" nhưng thực tế chưa xong không? Chuyện gì đã xảy ra, bạn phát hiện ra lúc nào?
+4. Hiện bạn đang theo dõi việc bằng công cụ hay cách nào? Đã thử công cụ nào chưa, vì sao còn dùng hoặc bỏ?
+5. Khi phải báo cáo tiến độ cho người giao việc, bạn thường làm thế nào? Có điều gì khiến việc đó khó hoặc khó chịu không?
+6. Bạn đã bao giờ chia một việc lớn thành các phần nhỏ để tính xem xong bao nhiêu chưa? Lần gần nhất thì sao?
+7. Bạn có thể cho mình xem cách bạn đang ghi tiến độ (bảng, tin nhắn, ghi chú) được không?
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | |
+| Câu nói đáng nhớ nhất (nguyên văn) | |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
+| Hiện đang xử lý bằng cách nào (workaround)? | |
+| Mất bao lâu, bao lần? | |
+| Insight / opportunity rút ra | |
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | |
+| Câu nói đáng nhớ nhất (nguyên văn) | |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
+| Hiện đang xử lý bằng cách nào (workaround)? | |
+| Mất bao lâu, bao lần? | |
+| Insight / opportunity rút ra | |
 
 | Trường | Nội dung |
 |---|---|

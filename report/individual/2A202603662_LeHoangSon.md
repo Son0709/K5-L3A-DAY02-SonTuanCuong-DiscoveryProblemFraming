@@ -28,7 +28,23 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
--
+Tôi tự nghĩ ra ý đầu tiên (học tiếng Trung 2 tiếng/ngày nhưng không giữ được thói quen) trước khi hỏi AI. Sau đó AI gợi ý thêm 9 ý theo 4 lăng kính, tôi chọn và sửa lại câu chữ theo trải nghiệm của mình.
+
+**Ý giữ lại (đã viết lại theo trải nghiệm của tôi):**
+- Gom tất cả deadline từ nhiều môn vào một chỗ: giữ vì tôi thật sự mất khoảng 90 phút/tuần và đã có 2 lần trễ hoặc suýt trễ hạn.
+- Nhắc đúng lúc rảnh khi bắt đầu một thói quen mới: giữ vì gắn với ý học tiếng Trung của tôi (thực hiện 7–8/14 buổi).
+- Nắm ý chính khi đọc tài liệu dài: giữ vì tôi đọc 3–4 tài liệu dài mỗi tuần và phải đọc lại nhiều lần.
+- Biết phần nào còn yếu khi chuẩn bị thi: giữ vì kì tuyển sinh vừa rồi tôi tốn khoảng 2/4 giờ ôn cho phần đã nắm chắc.
+
+**Ý của riêng tôi, không do AI gợi ý:**
+- Biết thành viên đã xong bao nhiêu % nhiệm vụ: tôi đưa ý này vào để thay cho ý "thống nhất giờ họp nhóm" mà AI đã gợi ý, vì ý này sát với việc nhóm đang làm hằng ngày hơn.
+
+**Ý AI gợi ý mà tôi bỏ:**
+- Thống nhất giờ họp nhóm: thay bằng ý tiến độ thành viên.
+- Tìm lại thông tin đã được thông báo trong Discord/Zalo/LMS: bỏ vì trùng pattern với problem 1 (gom deadline), nên không tách thành ý riêng.
+- Theo dõi chi tiêu ở nhiều app: bỏ vì tôi chưa có số đo thật cho ý này, không có dấu hiệu đủ để đưa vào.
+- Bạn cùng lớp học từ nhiều nguồn rời rạc cần lộ trình: bỏ vì tôi chưa hỏi ai và không có bằng chứng.
+- Thành viên nhóm không biết mình được giao việc gì: bỏ vì cùng vùng pain với problem 4 (tiến độ thành viên), nên gộp vào problem 4.
 
 ---
 

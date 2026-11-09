@@ -6,7 +6,7 @@
 
 - Tên nhóm: SonTuanCuong
 - Candidate problem nhóm chọn (1 câu): Biết thành viên đã xong bao nhiêu % nhiệm vụ được giao và đóng góp bao nhiêu % vào dự án
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Quyết định cuối (Go / Not Yet / No-Go): Go, phạm vi nhỏ.
 
 ## Thành viên
 

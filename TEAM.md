@@ -43,6 +43,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - 2.1. Pitch ; 2.2. Cluster ; 2.3. Opportunity Solution Tree rút gọn ; 2.4. Chấm điểm shortlist (1–5).
 - Thiết kế 3.1, phỏng vấn.
 - 4.1. Quy trình hiện tại
+- 8.1. Bốn rủi ro
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
@@ -50,6 +51,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Ghi lại những thông tin đã trao đổi, thảo luận với các thành viên trong nhóm về các phần .2. Cluster ; 2.3. Opportunity Solution Tree rút gọn ; 2.4. Chấm điểm shortlist (1–5).
 - Thiết kế 3.1. Assumption Map, phỏng vấn 1 trưởng nhóm và ghi lại kết quả.
 - Xây dựng quy trình hiện tại (Phần 4.1)
+- Xây dựng 4 rủi ro cho bài toán.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
@@ -58,6 +60,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Phần phỏng vấn: 729931cace3a99d7f5d16522b5c0c9ffb8da7932. Commit: Cập nhật phần phỏng vấn.
 - Phần Research giải pháp đã có: 22088908d19facad20c0fd37e67f0584d83eb188. Commit: Cập nhật phần tổng hợp công cụ quản lý dự án và kết luận nghiên cứu về tiến độ công việc.
 - Phần 4.1: b948a7a40c1d66b850bae4787a2cc171a003da4e. Commit: Cập nhật mô tả quy trình giao nhiệm vụ và tiến độ, làm rõ bottlenceck trong việc theo dõi tiến độ công việc.
+- Phần 8.1: 9f69bce70aa516b554083b1e82a8e55bd7c9dce1. Commit: Cập nhật phần đánh giá rủi ro trong báo cáo nhóm, bổ sung thông tin về giá trị, khả năng sử dụng, tính khả thi và tính bền vững của giải pháp AI.
 
 **Điều mình học được từ phần nhóm:**
 

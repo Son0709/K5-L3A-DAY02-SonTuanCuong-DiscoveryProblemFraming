@@ -152,7 +152,7 @@ HIỆN TẠI — khoảng 40 phút mỗi lần xảy ra (ước lượng)
 | Chọn candidate problem | Tham gia chấm điểm 3 candidate trong shortlist (#1, #2, #7) | Nhóm chọn #2 (27 điểm) thay vì #1 (28 điểm) vì #2 còn câu hỏi đáng kiểm chứng về cách định nghĩa "%" |
 | Kiểm chứng / research | Phỏng vấn 1 trưởng nhóm đồ án sinh viên, ghi Snapshot 3. Viết đoạn "Nhóm đã sửa problem thế nào sau kiểm chứng". Phụ trách research CP4 (theo TEAM.md): thêm 3 nguồn Jira, Linear, Standuply và đoạn "Kết luận Research" (commit `c0af0e3`, `8a11c1a`) | Snapshot 3 cho insight chính của bài: "không thiếu nơi ghi task, mà thiếu thước đo % rõ ràng". Bảng research sau đó được thay bằng Trello, Notion (commit `2208890` của Sơn), đoạn "Kết luận Research" của tôi vẫn giữ |
 | Quy trình nhóm | Viết quy trình tương lai mục 4.2: 4 bước (1 Rule, 1 AI, 2 con người), boundary và fallback (commit `8a11c1a`) | Đây là khung Workflow mà mục 6, 7, 8 dùng tiếp |
-| Problem Statement | Người hỗ trợ (Tuấn phụ trách v0 và v1). Phản biện "% sai mà vẫn trông chính xác" được đưa vào metric độ chính xác ở v1 | — |
+| Problem Statement | Người hỗ trợ (Tuấn phụ trách v0 và v1, theo TEAM.md) | — |
 | Mức can thiệp AI | Viết mục 6: ma trận, bảng 4 mức, AI Canvas, 2 câu PAIR (commit `b5eb1cf`) | Chọn Workflow nhưng lõi là No AI + Rule; ghi rõ Input chưa có sẵn; pilot tuần 1 chỉ chạy Rule |
 | Quyết định | Viết mục 8.2: Go phạm vi nhỏ, pilot 2 tuần, 4 ngưỡng dừng (commit `80c2dc6`, viết lại ở `2d6a3d4` sau khi bị ghi đè) | Quyết định khớp với 4 rủi ro Trung bình ở 8.1 của Sơn |
 
@@ -164,10 +164,11 @@ HIỆN TẠI — khoảng 40 phút mỗi lần xảy ra (ước lượng)
 |---|---|---|---|---|
 | CP1 Scan | Sau khi tự nêu vấn đề "hiểu lý thuyết nhưng khó áp dụng vào code", nhờ AI đưa danh sách tình huống thường gặp để gợi nhớ và diễn đạt lại thành Job Story | Gợi nhớ được các tình huống cụ thể trong lab lọc tin nhắn rác; giúp viết đúng dạng "Khi… tôi muốn… để…" | Đưa nhiều tình huống tôi chưa từng gặp (lỗi cài môi trường Colab, so sánh mô hình…); không có số liệu thật | Chỉ giữ 5 tình huống tôi đã gặp; bỏ các ý chưa gặp hoặc chưa có số liệu; tự điền số phút và tần suất theo ước lượng của mình |
 | CP2 Problem Card | Nhờ AI đóng vai PM hoài nghi phản biện 3 card | Chỉ ra baseline chỉ dựa trên trí nhớ; card #1 có thể đang nhảy sang AI sớm; card #2 chỉ đo thời gian, không đo mức hiểu | Cho rằng bottleneck card #1 có thể là bước tìm hàm; gợi ý gộp card #3 vào card #1 | Giữ bước "chia bài thành các bước code" là bottleneck (tìm hàm chỉ ~3', tra 1–3 lần/lab); giữ card #3 riêng vì kẹt ở thời điểm khác; thêm kế hoạch bấm giờ thật và metric mức hiểu cho card #2 |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
+| CP4 Research | Không dùng (tự tìm Jira, Linear, Standuply và tự viết bảng) | — | — | Sau đó phát hiện link Linear đã chết (404) nên bỏ khỏi tài liệu tham khảo |
+| CP5 Quy trình | Tự viết quy trình tương lai 4.2, nhờ AI chỉ ra lỗ hổng (không viết lại) | | | |
 | CP5–6 Problem Statement | Không dùng (phần này Tuấn phụ trách, tôi chỉ hỗ trợ) | — | — | — |
-| CP6 Mức can thiệp / quyết định | Dùng Claude (Claude Code) soạn nháp mục 6 và mục 8.2 từ dữ liệu có sẵn trong group_report, sau đó nhờ rút gọn | Đối chiếu số liệu giữa các mục (34–51 phút, 1–3 ngày, 1/4 người lo bị giám sát); chỉ ra No AI + Rule đã giải phần chính của bottleneck và Input cho AI chưa có sẵn | Bản đầu quá dài, khó đọc; các ngưỡng dừng 70% và "quá nửa số ngày" là số AI tự đề xuất, không có nguồn dữ liệu | Yêu cầu rút gọn còn khoảng 40 dòng; [Cương tự điền: bạn đã kiểm hoặc đổi ngưỡng nào, giữ hay bỏ ý nào] |
+| CP6 Mức can thiệp / quyết định | Dùng Claude (Claude Code) soạn nháp mục 6 và mục 8.2 từ dữ liệu có sẵn trong group_report, sau đó nhờ rút gọn | Đối chiếu số liệu giữa các mục (34–51 phút, 1–3 ngày, 1/4 người lo bị giám sát); chỉ ra No AI + Rule đã giải phần chính của bottleneck và Input cho AI chưa có sẵn | Bản đầu quá dài, khó đọc; các ngưỡng dừng 70% và "quá nửa số ngày" là số AI tự đề xuất, không có nguồn dữ liệu | Yêu cầu rút gọn mục 6 (còn khoảng 40 dòng) và mục 8.2 để dễ đọc; khi 8.2 bị ghi đè về template, yêu cầu viết lại đúng bản ngắn đã duyệt. Các ngưỡng 70% và "quá nửa số ngày" chưa có số liệu, nhóm sẽ chỉnh sau tuần 1 pilot |
+| CP7 (mục 4, 7 và TEAM.md) | Dùng Claude (Claude Code) tra git log trên `main` và nhánh cá nhân để liệt kê commit của tôi, rồi điền nháp bảng mục 4, mục 7 và phần của tôi trong TEAM.md | Tìm đúng commit làm bằng chứng; phát hiện link Linear trong research đã chết (404) | Bản nháp mục 4 có một dòng gán nhầm cho tôi phản biện của AI ở Problem Statement | Yêu cầu kiểm tra lại toàn bộ file theo RUBRIC và RULES; dòng gán nhầm được phát hiện và xóa |
 
 ---
 

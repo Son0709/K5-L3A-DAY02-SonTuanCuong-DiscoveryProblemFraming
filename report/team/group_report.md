@@ -7,8 +7,8 @@
 
 - Tên nhóm: SonTuanCuong 
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu): Khi giao nhiệm vụ cho thành viên và họ đã làm một khoảng thời gian, người giao việc muốn biết họ đã xong bao nhiêu % nhiệm vụ và phần đó đóng góp bao nhiêu % vào dự án, để kịp điều chỉnh trước deadline (candidate #2)
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn: Khi giao nhiệm vụ cho thành viên và họ đã làm một khoảng thời gian, người giao việc muốn biết họ đã xong bao nhiêu % nhiệm vụ và phần đó đóng góp bao nhiêu % vào dự án, để kịp điều chỉnh trước deadline
+- Quyết định cuối: Go
 
 ---
 
@@ -94,9 +94,6 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | 4 | Phần lớn nhiệm vụ nhóm chia được thành đầu việc nhỏ có tiêu chí "xong" rõ ràng để tính % | Feasibility | 5 | 2 | ✅ |
 | 5 | % thành viên tự báo lệch đáng kể so với % thực tế (nếu lệch ít thì không đáng giải) | Value | 4 | 2 | Sau |
 | 6 | Người giao việc sẽ duy trì cách theo dõi mới đều đặn, không bỏ sau vài tuần | Viability | 3 | 1 | Sau |
-
-
-Giả định nhóm kiểm chứng trong buổi này: **#1, #2, #3, #4** 
 
 ### 3.2. Kiểm chứng
 

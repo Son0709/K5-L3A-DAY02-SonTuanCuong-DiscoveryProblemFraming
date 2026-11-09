@@ -159,9 +159,15 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Trello: checklist trong thẻ việc | https://support.atlassian.com/trello/docs/adding-checklists-to-cards/ | Bước theo dõi tiến độ của từng đầu việc: chia việc thành các mục nhỏ và xem % mục đã xong | Trang chính thức nói mặt sau thẻ có thanh tiến độ cho biết % mục đã tick, mặt trước hiển thị số mục, và thanh chuyển xanh khi xong hết | Tiến độ chỉ nằm trong một thẻ và một checklist; trang không nói gì về tổng hợp tiến độ nhiều thẻ hay nhiều người. Thành viên vẫn phải tự tick, không chống được việc báo "gần xong" | Cách làm "chia đầu việc nhỏ, tính % theo số mục xong" đã có sẵn và miễn phí; nhóm không cần tự xây phần này. Khoảng trống còn lại là tổng hợp theo người và theo dự án |
+| Notion: Relations & rollups | https://www.notion.com/help/relations-and-rollups | Bước tính tiến độ cả dự án từ các task con (rollup từ bảng task lên bảng dự án) | Rollup tổng hợp dữ liệu của các task liên kết; trang chính thức liệt kê "Percent empty" và "Percent not empty" (% task có hoặc không có giá trị ở một thuộc tính) | Trang chỉ nêu % theo việc có giá trị hay không, không nêu "Percent checked" hay % theo từng trạng thái. Muốn ra % hoàn thành thật cần nhóm tự cấu hình cho thuộc tính "Xong", và vẫn do thành viên cập nhật | Có thể tự dựng bảng tiến độ bằng công cụ có sẵn mà không cần viết phần mềm. Điểm quyết định là định nghĩa "xong" của từng đầu việc, không phải công cụ |
+
+**Kết luận research:**
+
+```text
+Việc "chia đầu việc nhỏ và tính % theo số đầu việc xong" đã có sẵn trong công cụ phổ biến (Trello, Notion, Asana).
+Nhóm chưa có lý do tự xây một công cụ mới cho bước tính %. Hướng cần kiểm chứng tiếp: định nghĩa "xong" cho từng đầu việc và tín hiệu sớm để phát hiện thành viên chậm.
+```
 
 ---
 

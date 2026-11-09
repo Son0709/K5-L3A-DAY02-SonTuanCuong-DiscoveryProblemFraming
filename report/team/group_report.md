@@ -163,9 +163,15 @@ Thu hẹp từ "tự động hóa báo cáo tiến độ" thành "soạn nháp n
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| Jira Burndown & Velocity Chart | https://www.atlassian.com/agile/project-management/metrics | Bước 4–5: Theo dõi khối lượng công việc còn lại và tự động quy đổi % hoàn thành dựa trên story points. | Cung cấp số liệu rõ ràng, khách quan theo thời gian thực, giảm thiểu việc phải hỏi han thủ công. | Quá cồng kềnh, cấu hình phức tạp, đòi hỏi team phải cập nhật trạng thái liên tục nếu không số liệu sẽ sai lệch hoàn toàn. | Cần giữ cơ chế cập nhật đơn giản, tránh tạo thêm gánh nặng thủ tục hành chính cho thành viên nhóm. |
-| Linear Cycle Progress & Scope Tracking | https://linear.app/blog/progress-tracking | Bước 4: Tự động cảnh báo tiến độ bị lệch (scope creep) và tính toán tỷ lệ đóng góp của từng sub-task vào dự án chung. | Giao diện cực kỳ tối giản, tốc độ nhanh, tập trung cao độ vào việc theo dõi tiến độ công việc của từng cá nhân. | Thiếu tính năng phân tích sâu hoặc gợi ý định tính bằng AI để giải thích vì sao tiến độ lại bị chậm. | Nên học hỏi thiết kế tối giản của Linear để thành viên không thấy ngại mỗi khi cần cập nhật trạng thái công việc. |
-| Standuply (Slack/Teams Bot for Agile Teams) | https://www.standuply.com/ | Bước 2–3: Tự động thu thập báo cáo tiến độ không đồng bộ (async standup) qua khung chat hằng ngày. | Tự động hóa hoàn toàn câu hỏi "Hôm nay bạn làm được gì?" trực tiếp trên công cụ chat quen thuộc của team. | Dễ gây cảm giác bị giám sát quá mức khiến thành viên thấy phiền phức hoặc trả lời đối phó. | Tích hợp quy trình lấy thông tin qua kênh chat nhưng cần làm nhẹ nhàng, biến nó thành công cụ hỗ trợ thay vì kiểm soát. |
+| Trello: checklist trong thẻ việc | https://support.atlassian.com/trello/docs/adding-checklists-to-cards/ | Bước theo dõi tiến độ của từng đầu việc: chia việc thành các mục nhỏ và xem % mục đã xong | Trang chính thức nói mặt sau thẻ có thanh tiến độ cho biết % mục đã tick, mặt trước hiển thị số mục, và thanh chuyển xanh khi xong hết | Tiến độ chỉ nằm trong một thẻ và một checklist; trang không nói gì về tổng hợp tiến độ nhiều thẻ hay nhiều người. Thành viên vẫn phải tự tick, không chống được việc báo "gần xong" | Cách làm "chia đầu việc nhỏ, tính % theo số mục xong" đã có sẵn và miễn phí; nhóm không cần tự xây phần này. Khoảng trống còn lại là tổng hợp theo người và theo dự án |
+| Notion: Relations & rollups | https://www.notion.com/help/relations-and-rollups | Bước tính tiến độ cả dự án từ các task con (rollup từ bảng task lên bảng dự án) | Rollup tổng hợp dữ liệu của các task liên kết; trang chính thức liệt kê "Percent empty" và "Percent not empty" (% task có hoặc không có giá trị ở một thuộc tính) | Trang chỉ nêu % theo việc có giá trị hay không, không nêu "Percent checked" hay % theo từng trạng thái. Muốn ra % hoàn thành thật cần nhóm tự cấu hình cho thuộc tính "Xong", và vẫn do thành viên cập nhật | Có thể tự dựng bảng tiến độ bằng công cụ có sẵn mà không cần viết phần mềm. Điểm quyết định là định nghĩa "xong" của từng đầu việc, không phải công cụ |
+
+**Kết luận research:**
+
+```text
+Việc "chia đầu việc nhỏ và tính % theo số đầu việc xong" đã có sẵn trong công cụ phổ biến (Trello, Notion, Asana).
+Nhóm chưa có lý do tự xây một công cụ mới cho bước tính %. Hướng cần kiểm chứng tiếp: định nghĩa "xong" cho từng đầu việc và tín hiệu sớm để phát hiện thành viên chậm.
+```
 
 ---
 

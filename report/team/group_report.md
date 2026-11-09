@@ -233,11 +233,13 @@ TƯƠNG LAI — 4 bước: 1 Rule, 1 AI, 2 Con người
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 5 | 4 | Theo sơ đồ 4.1 và 4.2. Sơ đồ 4.2 không liệt kê "thành viên làm việc" và "thành viên cập nhật task"; nếu tính cả hai thì là 5 → 6. Lợi ích nằm ở thời gian và độ tin cậy của %, không nằm ở số bước |
+| Tổng thời gian (không tính 120' làm việc) | 34–51'/ngày + 3'/lần giao | khoảng 8'/ngày + khoảng 10'/lần giao | Trước: (4' hỏi + 10' chờ + 3' quy đổi) × 2–3 lần/ngày. Sau: Rule + AI khoảng 1', PM duyệt khoảng 5', thành viên cập nhật task khoảng 2', 1 lần/ngày. Giao việc lâu hơn vì phải chia sub-task và ghi tiêu chí "xong" |
+| Số bước thủ công | 5/5 | 2/4 | Còn lại: người giao việc chia task và PM duyệt. Ngoài 4 bước, thành viên vẫn phải cập nhật task bằng tay |
+| Bottleneck chính | Bước 4: thành viên trả lời "sắp xong" theo cảm tính, 10' chờ và hỏi lại mỗi lần; lệch chỉ lộ ra sát ngày bàn giao, tốn thêm 1–2 ngày để bù | Thành viên cập nhật task đúng và đều; PM duyệt nháp khoảng 5' | PM duyệt là điểm kiểm soát chất lượng nên chấp nhận được. Việc cập nhật đều thuộc giả định #3, chưa kiểm chứng, sẽ theo dõi trong pilot |
+| Rủi ro mới phát sinh | — | (1) AI diễn giải sai hoặc bịa nhận định; (2) task bị đánh dấu "xong" quá sớm khiến % sai nhưng trông như chính xác; (3) Rule tính mọi task ngang nhau nên % đóng góp lệch khi task khác độ lớn; (4) thành viên thấy bị giám sát | (1) AI không đổi dữ liệu gốc, PM duyệt trước khi gửi; nếu sai thì dùng template trắng hoặc dashboard. (2) Tiêu chí "xong" đặt từ bước 1. (3) Người giao việc chia sub-task cỡ tương đương. (4) 1/4 người được phỏng vấn đã lo bị đo đếm thành áp lực, cần kiểm chứng thêm |
+
+Cột "Trước" lấy từ mục 4.1. Cột "Sau" là ước lượng của nhóm vì chưa chạy thử, sẽ bấm giờ trong pilot để xác nhận.
 
 ---
 
@@ -245,16 +247,21 @@ TƯƠNG LAI — 4 bước: 1 Rule, 1 AI, 2 Con người
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Trưởng nhóm đồ án sinh viên hoặc dự án nhỏ (3–6 thành viên), người giao việc và chịu trách nhiệm bàn giao đúng hạn |
+| **Quy trình** | Giao nhiệm vụ trong chat → thành viên làm việc → trưởng nhóm nhắn hỏi "xong tới đâu rồi?" → thành viên trả lời bằng ước lượng → trưởng nhóm tự quy đổi thành % nhiệm vụ và % tiến độ dự án |
+| **Bottleneck** | Bước 4: thành viên trả lời theo cảm tính ("sắp xong") vì không có đơn vị chung để tính %, mỗi lần mất khoảng 10 phút chờ và hỏi lại |
+| **Impact** | 34–51 phút/ngày cho mỗi trưởng nhóm (17 phút/lần × 2–3 lần/ngày). Việc chậm chỉ lộ ra sát ngày bàn giao, 1–2 lần/dự án, tốn thêm 1–3 ngày để bù (Snapshot 1 và 3) |
+| **Success Metric** (baseline → target, cách đo) | Tổng thời gian theo dõi tiến độ mỗi ngày. **Baseline:** 34–51 phút/ngày (tính từ mục 4.1, theo mô tả của nhóm và phỏng vấn, chưa bấm giờ). **Target:** dưới 15 phút/ngày. **Cách đo:** trong 2 tuần pilot, trưởng nhóm bấm giờ thời gian hỏi, chờ, quy đổi hoặc duyệt; thành viên ghi số phút cập nhật task; cộng lại theo ngày để không tính thiếu phần việc chuyển sang thành viên |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | **AI không được:** thay đổi dữ liệu gốc (trạng thái task, scope, deadline); tự giao lại việc hoặc chuyển task giữa các thành viên. **HITL:** trưởng nhóm kiểm tra mọi bản nhận định của AI trước khi gửi cho người khác; nếu AI sai thì viết tay bằng template trắng hoặc xem dashboard |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+Phản biện từ AI (Claude), chỉ nêu lỗ hổng, không viết lại:
+
+- Metric chỉ đo tốc độ. Nếu thời gian giảm nhưng % vẫn sai thì trưởng nhóm vẫn phát hiện trễ; cần chỉ số nào để đo độ chính xác
+- Baseline chưa bấm giờ, và 10 phút chờ không phải thời gian trưởng nhóm thực sự làm việc. Gộp vào có làm baseline cao hơn thực tế không
+- Snapshot 2 đã dùng Google Sheet để tick trạng thái mà vẫn trễ deadline. Bottleneck có thật là thiếu đơn vị tính %, hay là thiếu cập nhật và theo dõi
+- "% nhiệm vụ" được tính thế nào khi các đầu việc khác độ lớn?
 
 ---
 

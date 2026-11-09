@@ -313,28 +313,31 @@ Vì sao:
 | Trường | Nội dung |
 |---|---|
 | **Actor** | Trưởng nhóm đồ án sinh viên hoặc dự án nhỏ (3–6 thành viên), người giao việc và chịu trách nhiệm bàn giao đúng hạn |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Quy trình** | Giao nhiệm vụ trong chat → thành viên làm việc → trưởng nhóm nhắn hỏi "xong tới đâu rồi?" → thành viên trả lời bằng ước lượng → trưởng nhóm tự quy đổi thành % nhiệm vụ và % tiến độ dự án |
+| **Bottleneck** | Bước 4: thành viên trả lời theo cảm tính ("sắp xong") vì không có đơn vị chung để tính %, mỗi lần mất khoảng 10 phút chờ và hỏi lại |
+| **Impact** | 34–51 phút/ngày cho mỗi trưởng nhóm (17 phút/lần × 2–3 lần/ngày). Việc chậm chỉ lộ ra sát ngày bàn giao, 1–2 lần/dự án, tốn thêm 1–3 ngày để bù (Snapshot 1 và 3) |
+| **Success Metric** (baseline → target, cách đo) | **(1) Tổng thời gian theo dõi tiến độ mỗi ngày.** **Baseline:** 34–51 phút/ngày (tính từ mục 4.1, theo mô tả của nhóm và phỏng vấn, chưa bấm giờ). **Target:** dưới 15 phút/ngày. **Cách đo:** trong 2 tuần pilot, trưởng nhóm bấm giờ thời gian hỏi, chờ, quy đổi hoặc duyệt; thành viên ghi số phút cập nhật task; cộng lại theo ngày. **(2) Độ chính xác của %: tỉ lệ sub-task đã tick "xong" mà thật sự xong.** **Baseline:** chưa có, đo trong tuần 1 pilot. **Target:** từ 90%. **Cách đo:** mỗi tuần trưởng nhóm kiểm thử 5 sub-task đã tick "xong", đối chiếu với tiêu chí "xong" đặt ở bước 1 |
+| **Boundary** | **AI không được:** thay đổi dữ liệu gốc (trạng thái task, scope, deadline); tự giao lại việc hoặc chuyển task giữa các thành viên; tính số hoặc tự gắn cờ; gửi tin hoặc sửa bảng task; tự đánh giá hay tự nhắc thành viên. **HITL:** trưởng nhóm kiểm tra mọi bản nhận định của AI trước khi gửi cho người khác; nếu AI sai thì viết tay bằng template trắng hoặc xem dashboard |
+| **AI intervention point** | Bước 3 của quy trình tương lai (mục 4.2): sau khi Rule tính % và gắn cờ, trước khi trưởng nhóm duyệt. Chạy 1 lần/ngày, và chỉ chạy được sau khi bước 1 đã chia sub-task |
+| **Mức chọn** | **Workflow.** Lõi là No AI (bước 1) và Rule (bước 2); AI chỉ soạn nháp ở bước 3. Pilot tuần 1 chỉ Rule, tuần 2 mới thêm AI |
+| **Rủi ro & người kiểm tra** | AI diễn giải sai, bịa lý do, bỏ qua cờ → trưởng nhóm kiểm mọi bản nháp trước khi gửi; cờ do Rule gắn nên AI không làm mất cờ được. Task bị đánh dấu "xong" quá sớm → tiêu chí "xong" đặt từ bước 1, trưởng nhóm kiểm thử 5 sub-task đã tick "xong" mỗi tuần. Task khác độ lớn làm lệch % → người giao việc chia sub-task cỡ tương đương. Thành viên thấy bị giám sát → cờ viết theo nhiệm vụ, không theo người |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Success Metric | Chỉ đo tổng thời gian theo dõi tiến độ | Thêm độ chính xác của %: tỉ lệ sub-task đã tick "xong" mà thật sự xong | Phản biện ở mục 5: nếu thời gian giảm nhưng % vẫn sai thì trưởng nhóm vẫn phát hiện trễ |
+| Boundary | AI không đổi dữ liệu gốc, không tự giao lại hay chuyển task | Thêm: AI không tính số, không tự gắn cờ, không gửi tin, không sửa bảng task, không tự đánh giá hay tự nhắc thành viên | Mục 6.2 và 6.3 chọn Workflow, số và cờ thuộc về Rule, hành động thuộc về trưởng nhóm; mục 6.4: 1/4 người được hỏi sợ bị đo đếm thành áp lực |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Đủ cờ | Mọi cờ Rule đã gắn đều được nêu trong nháp | Thiếu dù chỉ 1 cờ thì cả bản nháp không đạt |
+| 2 | Không bịa lý do | Mọi lý do truy được về ghi chú của thành viên; cờ không có ghi chú được ghi là chưa có ghi chú và đưa vào điểm cần hỏi lại | Có lý do không xuất hiện trong ghi chú |
+| 3 | Không đánh giá cá nhân | Viết theo nhiệm vụ; nêu tên người phụ trách nhiệm vụ vẫn đạt | Có câu đánh giá thành viên, ví dụ làm chậm, thiếu cố gắng |
+| 4 | Đúng số liệu | Mọi con số khớp kết quả Rule | Có số AI tự tính hoặc làm tròn khác Rule |
+| 5 | Đúng độ dài và cấu trúc | Dưới 150 từ, có % dự án và từng nhiệm vụ, giải thích cờ, điểm cần hỏi lại | Từ 150 từ trở lên hoặc thiếu phần |
 
 ---
 
@@ -367,7 +370,24 @@ Vì sao:
 
 ## 9. Hạn chế và hướng tiếp theo
 
-- 
+**Hạn chế**
+
+- **Bằng chứng còn mỏng:** nhóm mới có 3 Interview Snapshot chi tiết (2 trưởng nhóm, 1 học viên), chưa đủ để khái quát cho mọi nhóm nhỏ.
+- **Baseline chưa đo thật:** 34–51 phút/ngày được tính từ mô tả và phỏng vấn, chưa bấm giờ, và đang gộp cả 10 phút chờ vốn không phải thời gian trưởng nhóm thực sự làm việc.
+- **Lý do cần AI chưa có bằng chứng trực tiếp:** Rule đã giải phần chính của bottleneck; bước AI dựa vào ghi chú tự do của thành viên, nhưng chưa có phỏng vấn nào cho thấy thành viên sẽ viết ghi chú này.
+- **Giả định về hành vi chưa kiểm chứng:** thành viên có cập nhật đều mà không thấy bị giám sát không (#3), trưởng nhóm có duy trì cách theo dõi mới không (#6).
+- **Cách tính % còn thô:** Rule tính mọi sub-task ngang nhau nên "% đóng góp" có thể lệch khi các việc khác độ lớn.
+- **Công cụ và dữ liệu chưa xác nhận:** chưa rõ Trello hoặc Notion có tổng hợp được % theo người và dự án không; chưa kiểm chi phí Rovo hoặc Power-Up trả phí; chưa biết có được đưa ghi chú của thành viên vào công cụ AI không.
+- **Pilot có giới hạn đo:** 2 tuần chưa đủ để đo số lần phát hiện chậm sát bàn giao, và chỉ số độ chính xác chỉ dựa trên 5 sub-task mỗi tuần.
+
+**Hướng tiếp theo**
+
+1. Tuần 1 pilot chỉ chạy No AI + Rule: bấm giờ để có baseline thật, tách thời gian làm và thời gian chờ, đo baseline độ chính xác của %.
+2. Trước tuần 2, xác nhận khả năng tổng hợp của Trello hoặc Notion, chi phí và quyền đưa ghi chú vào công cụ AI.
+3. Tuần 2 thêm bước AI: chấm từng bản nháp theo 5 tiêu chí ở mục 7, đồng thời ghi lại thành viên có thật sự viết ghi chú không và AI có giúp giảm thời gian so với tuần 1 không.
+4. Phỏng vấn thêm trưởng nhóm và thành viên nhận việc, gồm cả người chỉ cần xem task Done, để xác định nhóm nào chỉ cần Rule.
+5. Chốt cách tính % đóng góp khi các việc khác độ lớn.
+6. Nếu tiếp tục sau pilot, theo dõi trọn một dự án để đo số lần phát hiện chậm sát bàn giao.
 
 ## 10. Tài liệu tham khảo
 

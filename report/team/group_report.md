@@ -269,38 +269,42 @@ Phản biện từ AI (Claude), chỉ nêu lỗ hổng, không viết lại:
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: **Độ phức tạp thấp**. Phần tính % có độ mơ hồ thấp, phần viết nhận định có độ mơ hồ cao → Workflow có AI ở một bước.
 
 Vì sao:
+
+- **Phức tạp thấp:** 4 bước cố định (mục 4.2), không rẽ nhánh, nguồn chính chỉ là bảng task.
+- **Mơ hồ thấp (tính %):** sub-task có tiêu chí "xong" thì % chỉ là phép đếm, có đúng/sai rõ.
+- **Mơ hồ cao (nhận định):** "ai có nguy cơ trễ, vì sao" có nhiều cách viết đúng và phải đọc ghi chú tự do của thành viên (ví dụ "còn kẹt API" ở Snapshot 3).
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Chia nhiệm vụ thành sub-task có tiêu chí "xong", thành viên tick cuối mỗi buổi làm | Nhóm nhỏ, ít việc song song | Vẫn phải hỏi và tự cộng tay; Snapshot 2 tick trên Sheet mà vẫn trễ | **Dùng cho bước 1** |
+| **Rule** | Trello checklist / Notion rollup tự tính % theo nhiệm vụ, người, dự án; gắn cờ khi sub-task chưa xong mà sắp tới hạn | Chỉ cần con số (1/2 người được hỏi nói xem task Done là đủ) | Thấy số nhưng không thấy lý do chậm; % sai nếu tick "xong" quá sớm | **Dùng cho bước 2** |
+| **Workflow** | Rule tính % và cờ → AI soạn nháp nhận định → trưởng nhóm duyệt rồi gửi | Phải tổng hợp nhiều việc và ghi chú tự do (2/2 người phải tổng hợp tay từ Jira/Excel/chat) | AI diễn giải sai, bịa lý do, bỏ qua cờ | **Chọn** |
+| **Agent** | AI tự đọc chat, tự đánh giá, tự nhắc thành viên, tự chia lại việc | Khi không đoán trước được bước tiếp theo | Vượt boundary mục 5; tăng cảm giác bị giám sát | Không chọn |
 
-**Mức chọn:**
+**Mức chọn:** **Workflow**. Lõi là No AI (bước 1) và Rule (bước 2); AI chỉ soạn nháp ở bước 3, không tính số, không tự gắn cờ.
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:** No AI + Rule giải được phần chính của bottleneck (thiếu đơn vị tính %). Nhưng Snapshot 2 và 3 cho thấy con số chưa đủ: có % mà vẫn trễ, vì lý do chậm nằm trong ghi chú tự do, Rule không đọc được. Bằng chứng này mới có 1–2 người, nên pilot chạy **tuần 1 chỉ Rule, tuần 2 mới thêm AI**; nếu AI không giúp giảm thời gian thì quay về Rule (ngưỡng ở mục 8). Không chọn Agent vì các bước đã cố định và mọi quyết định điều chỉnh là của trưởng nhóm.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Nháp nhận định dưới 150 từ: % dự án và từng nhiệm vụ (chép từ Rule), giải thích mọi cờ kèm lý do từ ghi chú, điểm cần hỏi lại |
+| **Judgment** — con người cân nhắc, quyết định gì? | Trưởng nhóm xác định cờ nào là chậm thật, có cần điều chỉnh phân công không, phần nào gửi ra ngoài nhóm |
+| **Action** — hành động cuối cùng là gì, ai làm? | Trưởng nhóm sửa nháp, gửi cập nhật, nhắn riêng thành viên nếu cần. AI không gửi tin, không sửa bảng task |
+| **Outcome** — đo kết quả bằng gì? | Thời gian theo dõi/ngày (34–51' → dưới 15'); số lần hỏi lại/ngày (2–3); số lần phát hiện chậm sát bàn giao (1–2/dự án); tỉ lệ nháp phải viết lại |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Kết quả Rule (sub-task, người làm, deadline, trạng thái, %, cờ) + ghi chú của thành viên. **Chưa có sẵn**: hiện việc giao trong chat, chưa chia sub-task; chỉ có sau khi bước 1 chạy được |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Phần trưởng nhóm sửa trong nháp; cờ bị đánh dấu "báo nhầm"; các lần chậm lộ ra ở demo mà nháp không nêu |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? **Augment.** Các hành động sau khi biết tiến độ (đẩy nhanh, thêm người ở Snapshot 1) đều do trưởng nhóm quyết; 1/4 người được hỏi sợ bị đo đếm thành áp lực, nên AI không được tự đánh giá hay tự nhắc thành viên.
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? **Bỏ sót tệ hơn.** Phát hiện chậm quá muộn tốn thêm 1–3 ngày (Snapshot 1, 3), còn báo nhầm chỉ tốn một lần hỏi lại. Xử lý: cờ do Rule gắn nên AI không làm mất cờ được; tiêu chí đánh giá bắt nháp nêu đủ mọi cờ; cờ viết theo nhiệm vụ, không theo người, để giảm áp lực khi báo nhầm.
 
 ---
 

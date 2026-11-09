@@ -351,17 +351,25 @@ Vì sao:
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** **Go, phạm vi nhỏ.**
 
-**Lý do:**
+**Lý do:** Cả 4 rủi ro ở mục 8.1 đều Trung bình, không có rủi ro Cao, và đều kiểm được ngay trong pilot. Rule chạy trước nên nếu bước AI thất bại, nhóm vẫn giữ được phần giải bottleneck chính (đơn vị tính %).
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** 1 nhóm đồ án 3–6 người, 2 tuần, dùng Trello checklist miễn phí và một prompt chuẩn, không trả phí.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+- **Tuần 1 (No AI + Rule):** chia sub-task có tiêu chí "xong", thành viên tick và ghi 1 dòng ghi chú mỗi buổi; trưởng nhóm bấm giờ theo dõi để có baseline thật.
+- **Tuần 2 (thêm AI):** hỏi thành viên đồng ý đưa ghi chú vào AI trước; AI soạn nháp mỗi ngày, trưởng nhóm duyệt và chấm theo 5 tiêu chí ở mục 7.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Không áp dụng (giả định #3, #6 được kiểm trong tuần 1).
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Nếu No-Go — nên làm gì thay AI:** Không áp dụng. Dự phòng: giữ No AI + Rule, trưởng nhóm viết cập nhật bằng template.
+
+**Ngưỡng dừng:**
+
+- Hết tuần 1, thành viên không cập nhật ở quá nửa số ngày → không bật AI, quay về CP4 kiểm lại giả định #3.
+- Sau tuần 2, thời gian theo dõi không thấp hơn tuần 1 hoặc phải viết lại trên 70% bản nháp → bỏ AI, giữ Rule.
+- Có 1 bản nháp thiếu cờ hoặc sai số lọt qua bước duyệt → dừng AI ngay.
+- Sau 2 tuần, thời gian vẫn từ 34 phút/ngày trở lên hoặc độ chính xác % dưới 70% → dừng giải pháp, quay về CP4 (bottleneck có thể là thiếu cập nhật, không phải thiếu đơn vị tính %).
 
 ---
 

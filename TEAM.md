@@ -24,13 +24,13 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ nhóm | | | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | | | Assumption map, snapshot hoặc survey |
-| CP4 — Research | | | Bảng research có link |
-| CP5 — Quy trình trước/sau | | | Quy trình + bảng before/after |
-| CP5 — Problem Statement v0 | | | Problem Statement v0 |
-| CP6 — Mức can thiệp + Problem Statement v1 | | | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định | | | 4 rủi ro + Go/Not Yet/No-Go |
+| CP3 — Hội tụ nhóm | Sơn  | Tuấn, Cương | Cluster, cây OST, bảng chấm điểm |
+| CP4 — Kiểm chứng | Sơn | Tuấn, Cương | Assumption map, snapshot hoặc survey |
+| CP4 — Research | Cương | Sơn, Tuấn | Bảng research có link |
+| CP5 — Quy trình trước/sau | Tuấn | Sơn, Cương | Quy trình + bảng before/after |
+| CP5 — Problem Statement v0 | Tuấn | Sơn, Cương| Problem Statement v0 |
+| CP6 — Mức can thiệp + Problem Statement v1 | Tuấn, Cương | Sơn | Ma trận, AI Canvas, eval, Problem Statement v1 |
+| CP6 — Quyết định | Sơn, Cương | Tuấn | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
 

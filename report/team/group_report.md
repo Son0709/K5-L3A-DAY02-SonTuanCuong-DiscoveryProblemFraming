@@ -117,15 +117,15 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 | Trường | Nội dung |
 |---|---|
 | Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Câu nói đáng nhớ nhất (nguyên văn) | Mình dùng file GG Sheet để theo dõi tiến độ làm việc  |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tháng trước, làm trễ deadline với khách hàng |
+| Hiện đang xử lý bằng cách nào (workaround)? | Mỗi khi xong tick chọn trạng thái trên gg sheet |
+| Mất bao lâu, bao lần? | Tốn thời gian lặp lại |
+| Insight / opportunity rút ra | Bám sát vào dự án |
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
+| Người được hỏi (vai trò, không ghi tên thật) | Học viên |
 | Câu nói đáng nhớ nhất (nguyên văn) | |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
 | Hiện đang xử lý bằng cách nào (workaround)? | |

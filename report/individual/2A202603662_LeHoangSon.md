@@ -152,28 +152,26 @@ HIỆN TẠI — 30 phút/tuần cho việc lên kế hoạch
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Tôi đã đóng góp 3 Problems, tổng hợp tất cả problems của nhóm + nội dung câu hỏi | Đạt được thống nhất chung cho problem. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Vậy khác biệt gì so với những con AI hiện tại như ChatGPT, Claude,...?; Số liệu thống kê nào có thể đánh giá được skill sinh ra?; "Thời gian đáng tin" lấy từ những thông số nào?; Có sinh code gợi ý không hay là chỉ sinh câu hỏi ôn tập?; Đọc ở đây là nắm rõ hết lý thuyết, hay chỉ cần biết trong slide có những phần nào quan trọng? ; AI có tự sinh code không hay chỉ gợi ý? | Làm rõ được các problem của team |
+| Nhận phản biện | Câu hỏi tôi nhận được: Làm sao để gom lại được tất cả deadline trong nhiều ứng dụng? Làm sao để có thể biết đâu là deadline đâu là bài tập? àm sao để thành viên có thể sắp xếp được lịch dù đã có ứng dụng? Trên thị trường đã có nhiều ứng dụng tương tự như vậy, và nguyên nhân chính vẫn là việc nhàm chán do học 1 mình? | Tôi đã sửa gì: Chuyển đổi problem từ việc quản lý deadline của bản thân sang quản lý tiến độ hoàn thành công việc của nhóm |
+| Gom cluster / cây OST | Thống nhất ý kiến nhóm, ghi lại kết quả đã bàn bạc | Xây dựng được 3 cluster |
+| Chọn candidate problem | Đưa ra luận điểm chọn problem của bản thân, trao đổi với nhóm| Thống nhất được candidate problem |
+| Kiểm chứng / research | Tạo Assumption Map và phỏng vấn | Tạo được Assumption Map và Snapshot 1 |
+| Quy trình nhóm | Xây dựng quy trình hiện tại | Tạo được sơ đồ quy trình hiện tại |
+| Problem Statement | Đóng góp ý kiến | Chốt được Problem Statement |
+| Mức can thiệp AI | Đóng góp ý kiến | |
+| Quyết định | Đóng góp ý kiến | |
 
 ---
 
 ## 5. Dùng AI
 
-| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
-|---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
+| CP1 Scan | Sau khi tự nghĩ ý học tiếng Trung, tôi nhờ AI gợi ý thêm vấn đề theo 4 lăng kính | Gợi ý nhiều hướng tôi chưa nghĩ tới (gom deadline, đọc tài liệu dài, ôn thi, theo dõi chi tiêu...) | Tự đoán tôi là sinh viên rồi gợi ý chung chung; một số gợi ý chưa có số đo (theo dõi chi tiêu, lộ trình cho bạn cùng lớp); gợi ý "chốt giờ họp" không sát việc nhóm đang làm | Chọn 4 ý hợp trải nghiệm, bỏ ý không có dấu hiệu thật, và thay "chốt giờ họp" bằng ý tiến độ thành viên của chính tôi |
+| CP2 Problem Card | Nhờ AI dựng khung Problem Card cho 3 vấn đề, rồi đóng vai "PM hoài nghi" phản biện card 1 | AI chỉ ra bottleneck chưa nhất quán (30' và 10'/lần không khớp), target 90→60 phút chưa có lý do, "suýt trễ" chưa có định nghĩa, chưa chứng minh lịch chung là chưa đủ | Bản nháp card 3 có dòng metric viết lộn xộn; số liệu trong bản nháp chỉ là giả định `[?]`, không phải số thật của tôi | Tự điền số thật (90 phút/tuần, 2 lần trễ, 7–8/14 buổi); không đồng ý với điểm "bottleneck chưa rõ"; đồng ý với các điểm còn lại |
+| CP4 Research | Dùng AI tìm công cụ có sẵn (Trello, Asana, Notion) và nhờ mở từng link kiểm lại | Tìm nhanh các công cụ cùng loại và cho thấy việc tính % theo số đầu việc xong đã có sẵn | Kết quả tìm kiếm nói Notion có "Percent checked", nhưng trang chính thức chỉ liệt kê "Percent empty / Percent not empty"; trang trợ giúp Asana mở được nhưng không hiện nội dung; trang cộng đồng Trello chỉ trả về tiêu đề | Chỉ dùng trang chính thức đã đọc được, ghi rõ giới hạn của từng nguồn, không dùng số liệu hay tính năng chưa kiểm được; sẽ tự mở lại các link trước khi nộp |
+| CP5 Quy trình | Nhờ AI soạn quy trình hiện tại 5 bước từ Problem Card và kết quả phỏng vấn | Sắp xếp được quy trình có actor, input, output, thời gian và đánh dấu bottleneck | AI để nhiều ô thời gian là `[?]` vì chưa có dữ liệu; đặt bottleneck ở bước 4 trong khi phỏng vấn cho thấy vấn đề có thể là phát hiện chậm trễ quá muộn | Tôi cần đo thật các số `[?]` và cùng nhóm bàn lại định nghĩa bottleneck trước khi chốt |
+| CP5–6 Problem Statement | Chưa thực hiện | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---
@@ -182,19 +180,39 @@ HIỆN TẠI — 30 phút/tuần cho việc lên kế hoạch
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?** 
+
+Trả lời: Tôi học được các góc nhìn cũng như những problem của các bạn khác. Tuấn có những vấn đề về skill và prompt. Cương có những vấn đề về học tập, đặc biệt trong khóa học AI này. Từ những prompt đó tôi cũng thấy có những prompt tôi đang mắc phải, và cũng mong muốn được giải quyết chúng.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
+Trả lời: Có. Khi nhóm thống nhất những câu hỏi để phỏng vấn, ban đầu bộ câu hỏi chưa đủ rộng để có thể nắm hết rõ khó khăn của người được phỏng vấn, nên chỉ nhận được những câu trả lời chung chung. Sau khi nhận thấy vấn đề đó, nhóm đã họp lại và đưa ra 1 bộ câu hỏi chuyên sâu hơn.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+
+Trả lời: Có. Tôi đã thay đổi từ việc giải quyết vấn đề về deadline sang vấn đề kiểm soát được tiến độ làm việc của từng thành viên trong nhóm. Sau khi Tuấn và Cương đặt câu hỏi, tôi thấy vấn đề cốt lõi của tôi là không làm kịp nhiệm vụ đúng với deadline, chứ không phải là không kiểm soát được các deadline, cũng như không thể cấp quyền cho AI Agent vào Zalo/Discord/LMS.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
+Trả lời: Có. Điều tôi khá bất ngờ là anh PM được tôi phỏng vấn cũng đã có kinh nghiệm trong công việc, tuy nhiên anh vẫn chưa thể kiểm soát được tiến độ dự án của những thành viên mới, và anh cũng mong muốn có 1 phần mềm có thể hỗ trợ việc đó.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
+Trả lời: Điều khó nhất khi viết Problem Statememt là xác định chính xác phần Bottleneck, bởi vì đây là phần cốt lõi để có thể giải quyết vấn đề đó.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Trả lời: Nếu làm lại, tôi sẽ nêu rõ những vấn đề của mình hơn, biết được Bottleneck nào mới là phần tôi vướng mắc nhất. Từ đó khi phản biện với nhóm, tôi có thể bảo lưu được quan điểm của mình.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Trả lời:
+- Problem: PM/Lead gặp vấn đề trong việc giám sát tiến độ làm việc của từng thành viên trong ngày, trong từng nhiệm vụ.
+- Quy trình: PM/Lead giao nhiệm vụ -> Thành viên nhận và làm -> PM/Lead hỏi về tiến độ -> Thành viên trả lời không chính xác, ước lượng cảm tính -> PM?Lead tự quy đổi thành %.
+- Metric: baseline, target
+- Boundary: 
+- Mức can thiệp:
+- Quyết định:
 
 ---
 

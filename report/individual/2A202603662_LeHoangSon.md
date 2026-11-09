@@ -141,9 +141,9 @@ HIỆN TẠI — 30 phút/tuần cho việc lên kế hoạch
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| Bước 1 (mở LMS, 30') nặng bằng bước 2 nên bottleneck chưa rõ; số 10 phút/lần và 30' không khớp | Không đồng ý | |
-| Chưa chứng minh lịch chung + checklist là chưa đủ | Đồng ý | |
-| Target 90 → 60 phút không có lý do; "suýt trễ" chưa có định nghĩa | Đồng ý |  |
+| Bước 1 (mở LMS, 30') nặng bằng bước 2 nên bottleneck chưa rõ; số 10 phút/lần và 30' không khớp | Không đồng ý | Giữ nguyên bottleneck ở bước 2, vì thông báo hạn rải rác trong nhiều kênh chat nên khó tìm hơn bước mở LMS (chỉ một nơi). Số 10 phút/lần là mỗi lần tìm, còn 30' là tổng cả tuần nên không mâu thuẫn; cần bấm giờ thật để kiểm lại |
+| Chưa chứng minh lịch chung + checklist là chưa đủ | Đồng ý | Chưa sửa card. |
+| Target 90 → 60 phút không có lý do; "suýt trễ" chưa có định nghĩa | Đồng ý | Chưa sửa card. |
 | Actor mơ hồ, 2 bạn cùng gặp chưa có bằng chứng | Đồng ý | Tôi mới thêm thông tin của bản thân, chưa khảo sát sinh viên khác |
 
 ---
@@ -160,19 +160,21 @@ HIỆN TẠI — 30 phút/tuần cho việc lên kế hoạch
 | Kiểm chứng / research | Tạo Assumption Map và phỏng vấn | Tạo được Assumption Map và Snapshot 1 |
 | Quy trình nhóm | Xây dựng quy trình hiện tại | Tạo được sơ đồ quy trình hiện tại |
 | Problem Statement | Đóng góp ý kiến | Chốt được Problem Statement |
-| Mức can thiệp AI | Đóng góp ý kiến | |
-| Quyết định | Đóng góp ý kiến | |
+| Mức can thiệp AI | Đóng góp ý kiến | Cùng team chốt mức can thiệp AI |
+| Quyết định | Đóng góp ý kiến | Cùng team chốt kết quả cuối cùng |
 
 ---
 
 ## 5. Dùng AI
 
+| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+|---|---|---|---|---|
 | CP1 Scan | Sau khi tự nghĩ ý học tiếng Trung, tôi nhờ AI gợi ý thêm vấn đề theo 4 lăng kính | Gợi ý nhiều hướng tôi chưa nghĩ tới (gom deadline, đọc tài liệu dài, ôn thi, theo dõi chi tiêu...) | Tự đoán tôi là sinh viên rồi gợi ý chung chung; một số gợi ý chưa có số đo (theo dõi chi tiêu, lộ trình cho bạn cùng lớp); gợi ý "chốt giờ họp" không sát việc nhóm đang làm | Chọn 4 ý hợp trải nghiệm, bỏ ý không có dấu hiệu thật, và thay "chốt giờ họp" bằng ý tiến độ thành viên của chính tôi |
-| CP2 Problem Card | Nhờ AI dựng khung Problem Card cho 3 vấn đề, rồi đóng vai "PM hoài nghi" phản biện card 1 | AI chỉ ra bottleneck chưa nhất quán (30' và 10'/lần không khớp), target 90→60 phút chưa có lý do, "suýt trễ" chưa có định nghĩa, chưa chứng minh lịch chung là chưa đủ | Bản nháp card 3 có dòng metric viết lộn xộn; số liệu trong bản nháp chỉ là giả định `[?]`, không phải số thật của tôi | Tự điền số thật (90 phút/tuần, 2 lần trễ, 7–8/14 buổi); không đồng ý với điểm "bottleneck chưa rõ"; đồng ý với các điểm còn lại |
+| CP2 Problem Card | Nhờ AI dựng khung Problem Card cho 3 vấn đề, rồi đóng vai "PM hoài nghi" phản biện card 1 | AI chỉ ra bottleneck chưa nhất quán (30' và 10'/lần không khớp), target 90→60 phút chưa có lý do, "suýt trễ" chưa có định nghĩa, chưa chứng minh lịch chung là chưa đủ | Bản nháp card 3 có dòng metric viết lộn xộn | Tự điền số thật (90 phút/tuần, 2 lần trễ, 7–8/14 buổi); không đồng ý với điểm "bottleneck chưa rõ"; đồng ý với các điểm còn lại |
 | CP4 Research | Dùng AI tìm công cụ có sẵn (Trello, Asana, Notion) và nhờ mở từng link kiểm lại | Tìm nhanh các công cụ cùng loại và cho thấy việc tính % theo số đầu việc xong đã có sẵn | Kết quả tìm kiếm nói Notion có "Percent checked", nhưng trang chính thức chỉ liệt kê "Percent empty / Percent not empty"; trang trợ giúp Asana mở được nhưng không hiện nội dung; trang cộng đồng Trello chỉ trả về tiêu đề | Chỉ dùng trang chính thức đã đọc được, ghi rõ giới hạn của từng nguồn, không dùng số liệu hay tính năng chưa kiểm được; sẽ tự mở lại các link trước khi nộp |
-| CP5 Quy trình | Nhờ AI soạn quy trình hiện tại 5 bước từ Problem Card và kết quả phỏng vấn | Sắp xếp được quy trình có actor, input, output, thời gian và đánh dấu bottleneck | AI để nhiều ô thời gian là `[?]` vì chưa có dữ liệu; đặt bottleneck ở bước 4 trong khi phỏng vấn cho thấy vấn đề có thể là phát hiện chậm trễ quá muộn | Tôi cần đo thật các số `[?]` và cùng nhóm bàn lại định nghĩa bottleneck trước khi chốt |
-| CP5–6 Problem Statement | Chưa thực hiện | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP5 Quy trình | Nhờ AI soạn quy trình hiện tại 5 bước từ Problem Card và kết quả phỏng vấn | Sắp xếp được quy trình có actor, input, output, thời gian và đánh dấu bottleneck | Đặt bottleneck ở bước 4 trong khi phỏng vấn cho thấy vấn đề có thể là phát hiện chậm trễ quá muộn | Tôi cần đo thật các số và cùng nhóm bàn lại định nghĩa bottleneck trước khi chốt |
+| CP5–6 Problem Statement | Hỏi AI cách viết Success Metric và Boundary cho Problem Statement (AI chỉ hướng dẫn, không viết thay) | Chỉ ra metric cần đủ baseline, target và cách đo; boundary cần cả "AI không được làm gì" và điều kiện con người kiểm tra; phát hiện số liệu của tôi chưa khớp (báo cáo cá nhân ghi 4 lần/ngày, báo cáo nhóm ghi 2–3 lần/ngày) | Các target AI gợi ý (dưới 0,5 ngày, 1 lần/ngày) là con số đề xuất, chưa có cơ sở đo; ví dụ boundary soạn cho cả hướng No AI và có AI khi nhóm chưa chốt mức can thiệp; không rõ target "<5% độ lệch" ở card #2 có đo được không | Cần thống nhất một số liệu bằng cách đếm lại trong chat nhóm; thay target bằng con số nhóm tự định sau khi bấm giờ; chỉ giữ boundary đúng với mức nhóm đã chọn |
+| CP6 Mức can thiệp / quyết định | Hỏi AI "mức can thiệp là gì" và nhờ điền bảng 4 rủi ro (mục 8.1) dựa trên nội dung nhóm đã viết | Giải thích rõ 4 mức No AI, Rule, Workflow, Agent bằng ví dụ của bài nhóm; đối chiếu mức độ rủi ro với bằng chứng sẵn có (Snapshot, research ở mục 3.3) | Chỉ dùng số liệu được trích trong mục 5 và 6, chưa đọc đầy đủ Snapshot 2–4; mức Trung bình ở cả 4 rủi ro là đánh giá của AI, chưa qua thảo luận nhóm; Feasibility chấm dựa trên research chưa xác nhận được việc tự tổng hợp % theo người | Cần cả nhóm rà lại từng mức rủi ro với bằng chứng thật trước khi chốt Go hoặc Not Yet; mục 8.2 (kết luận, ngưỡng dừng) nhóm tự quyết |
 
 ---
 
@@ -210,9 +212,9 @@ Trả lời:
 - Problem: PM/Lead gặp vấn đề trong việc giám sát tiến độ làm việc của từng thành viên trong ngày, trong từng nhiệm vụ.
 - Quy trình: PM/Lead giao nhiệm vụ -> Thành viên nhận và làm -> PM/Lead hỏi về tiến độ -> Thành viên trả lời không chính xác, ước lượng cảm tính -> PM?Lead tự quy đổi thành %.
 - Metric: baseline, target
-- Boundary: 
-- Mức can thiệp:
-- Quyết định:
+- Boundary: AI không được thay đổi dữ liệu gốc (trạng thái task, scope, deadline); tự giao lại việc hoặc chuyển task giữa các thành viên
+- Mức can thiệp: Lõi là No AI (bước 1) và Rule (bước 2); AI chỉ soạn nháp ở bước 3. Pilot tuần 1 chỉ Rule, tuần 2 mới thêm AI
+- Quyết định: Go
 
 ---
 

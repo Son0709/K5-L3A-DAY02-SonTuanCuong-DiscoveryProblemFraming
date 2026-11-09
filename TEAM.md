@@ -89,16 +89,33 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
--
+- 3.2. Kiểm chứng: Snapshot 2 và bảng tổng hợp phỏng vấn.
+- 4.3. Before / after.
+- 5. Problem Statement v0. 
+- 7. Problem Statement v1 + tiêu chí đánh giá.
+- 9. Hạn chế và hướng tiếp theo.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Phỏng vấn 1 học viên, ghi Snapshot 2 và thêm 3 dòng vào bảng tổng hợp phỏng vấn.
+- Điền bảng before/after: số bước, tổng thời gian, số bước thủ công, bottleneck, rủi ro mới phát sinh.
+- Viết Problem Statement v0 và ghi 4 phản biện của AI về v0.
+- Viết Problem Statement v1, bảng thay đổi v0 → v1 và 5 tiêu chí đánh giá đầu ra của AI; v1 thêm chỉ số độ chính xác của %, mở rộng Boundary, điền AI intervention point, mức chọn, rủi ro và người kiểm tra.
+- Đổi actor từ PM sang trưởng nhóm cho thống nhất giữa quy trình và Problem Statement.
+- Viết mục Hạn chế và 6 bước tiếp theo cho pilot.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- Phần 3.2, Snapshot 2: `c10d6eb` (snap tuan), `4c965a3` (cập nhật pv).
+- Phần 3.2, bảng tổng hợp: `78aecbb` (tổng hợp phỏng vấn).
+- Phần 4.3 và 5: `80a080d` (Problem Statement v0).
+- Phần 3.3, 4.1–4.3 và trường Actor ở phần 7: `f3dea9a` (cập nhật actor).
+- Phần 7 và 9: `d5441a9` (complete Problem Statement v1 + tiêu chí đánh giá (CP6) Hạn chế và hướng tiếp theo).
+
+> Các mục phụ trách, đóng góp và bằng chứng ở trên được Claude Code tổng hợp từ git log và git blame.
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Hiểu cách đưa AI vào bài toán 
+- Sử dụng AI ở cấp độ nào 
+- Xác định được problem statement 

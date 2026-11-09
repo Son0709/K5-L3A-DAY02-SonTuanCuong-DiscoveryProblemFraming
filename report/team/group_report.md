@@ -127,7 +127,7 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 
 | Trường | Nội dung |
 |---|---|
- Người được hỏi (vai trò, không ghi tên thật) | |
+ Người được hỏi (vai trò, không ghi tên thật) | Học viên |
 | Câu nói đáng nhớ nhất (nguyên văn) | Mình dùng file GG Sheet để theo dõi tiến độ làm việc  |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tháng trước, làm trễ deadline với khách hàng |
 | Hiện đang xử lý bằng cách nào (workaround)? | Mỗi khi xong tick chọn trạng thái trên gg sheet |

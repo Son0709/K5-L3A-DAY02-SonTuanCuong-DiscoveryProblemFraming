@@ -141,28 +141,28 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) | Trưởng nhóm phát triển phần mềm trong một dự án đồ án sinh viên (Role: Project Leader / Người giao việc) |
+| Câu nói đáng nhớ nhất (nguyên văn) | "Đang làm" nhưng đến lúc demo mới thấy dậm chân tại chỗ. |
+| Vấn đề gần nhất | Thành viên báo 70% cho module pipeline, nhưng đến demo phần API còn chưa xong, cả đội phải thức đêm sửa. |
+| Workaround | Ghi task trên Jira/Notion, nhưng cập nhật chậm; vẫn phải hỏi lại và đoán % bằng cảm tính. |
+| Mất thời gian | 2–3 lần hỏi/ngày, mỗi lần 10–15 phút; thêm 2–3 ngày khắc phục trễ. |
+| Insight | Không thiếu nơi ghi task, mà thiếu thước đo % hoàn thành rõ ràng để không phụ thuộc vào lời nói ước chừng. |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
+Thu hẹp từ "tự động hóa báo cáo tiến độ" thành "soạn nháp nhận định và quy đổi % từ task có sẵn", giảm thời gian hỏi lại. Đồng thời bổ sung cách không dùng AI: template chuẩn hóa + dashboard trực quan cho leadership xem tổng quan nhanh. Giả định #3 về cập nhật đều đặn vẫn cần kiểm chứng thêm trong pilot.
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Jira Burndown & Velocity Chart | https://www.atlassian.com/agile/project-management/metrics | Bước 4–5: Theo dõi khối lượng công việc còn lại và tự động quy đổi % hoàn thành dựa trên story points. | Cung cấp số liệu rõ ràng, khách quan theo thời gian thực, giảm thiểu việc phải hỏi han thủ công. | Quá cồng kềnh, cấu hình phức tạp, đòi hỏi team phải cập nhật trạng thái liên tục nếu không số liệu sẽ sai lệch hoàn toàn. | Cần giữ cơ chế cập nhật đơn giản, tránh tạo thêm gánh nặng thủ tục hành chính cho thành viên nhóm. |
+| Linear Cycle Progress & Scope Tracking | https://linear.app/blog/progress-tracking | Bước 4: Tự động cảnh báo tiến độ bị lệch (scope creep) và tính toán tỷ lệ đóng góp của từng sub-task vào dự án chung. | Giao diện cực kỳ tối giản, tốc độ nhanh, tập trung cao độ vào việc theo dõi tiến độ công việc của từng cá nhân. | Thiếu tính năng phân tích sâu hoặc gợi ý định tính bằng AI để giải thích vì sao tiến độ lại bị chậm. | Nên học hỏi thiết kế tối giản của Linear để thành viên không thấy ngại mỗi khi cần cập nhật trạng thái công việc. |
+| Standuply (Slack/Teams Bot for Agile Teams) | https://www.standuply.com/ | Bước 2–3: Tự động thu thập báo cáo tiến độ không đồng bộ (async standup) qua khung chat hằng ngày. | Tự động hóa hoàn toàn câu hỏi "Hôm nay bạn làm được gì?" trực tiếp trên công cụ chat quen thuộc của team. | Dễ gây cảm giác bị giám sát quá mức khiến thành viên thấy phiền phức hoặc trả lời đối phó. | Tích hợp quy trình lấy thông tin qua kênh chat nhưng cần làm nhẹ nhàng, biến nó thành công cụ hỗ trợ thay vì kiểm soát. |
 
 ---
 

@@ -179,18 +179,25 @@ Nhóm chưa có lý do tự xây một công cụ mới cho bước tính %. Hư
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — 5 bước, 5/5 bước thủ công; mỗi lần hỏi tiến độ mất khoảng 10 phút chờ, lặp 2–3 lần/ngày
 
+[1 Giao nhiệm vụ trong chat: 3'] → [2 Thành viên làm việc: ví dụ 120']
+→ [3 Người giao việc nhắn hỏi "xong tới đâu rồi?": 4']
+→ [4 Thành viên trả lời bằng ước lượng cảm tính ("sắp xong"): 10' chờ và hỏi lại] ← BOTTLENECK
+→ [5 Người giao việc tự quy đổi thành % so với dự án: 3']
+
+Hệ quả (từ phỏng vấn nhóm trưởng): gần ngày bàn giao mới phát hiện thành viên chưa xong (ví dụ 60% chưa xong),
+1–2 lần/dự án, tốn thêm 1–2 ngày để bù.
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Người giao việc (nhóm trưởng, PM) | Yêu cầu của dự án | Nhiệm vụ gửi trong chat, chưa có tiêu chí "xong" | 3 phút/lần giao | Thường chỉ mô tả bằng lời, không chia đầu việc nhỏ |
+| 2 | Thành viên nhận việc | Nhiệm vụ được giao | Phần việc đang làm dở | Ví dụ 120 phút/đợt làm | Không ai theo dõi trong lúc làm |
+| 3 | Người giao việc | Nhu cầu biết tiến độ | Tin nhắn hỏi tiến độ | 4 phút/lần; 2–3 lần/ngày | Phải chủ động hỏi, thành viên ít tự báo |
+| 4 | Thành viên | Cảm nhận của bản thân về phần đã làm | Câu trả lời ước lượng ("sắp xong") | 10 phút chờ và hỏi lại mỗi lần | Không có đơn vị chung để tính "%" nên câu trả lời mơ hồ; chuyển giao: thành viên → người giao việc |
+| 5 | Người giao việc | Câu trả lời mơ hồ của thành viên | % tự quy đổi so với cả dự án | 3 phút/lần | Chuyển giao: không có bước kiểm; lệch chỉ lộ ra sát ngày bàn giao |
 
-**Bottleneck chính:**
 
 ### 4.2. Quy trình tương lai
 

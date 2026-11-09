@@ -69,19 +69,30 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Mỗi thành viên trong nhóm có 1 góc nhìn vấn đề khác nhau, ví dụ như Cương thì thiên về học tập của bản thân, Tuấn thì thiên về skill và prompt.
 
 
-### HoVaTen-MSSV
+### DangDucCuong-2A202603680
 
 **Phần việc phụ trách:**
 
--
+- 3.2. Kiểm chứng: Snapshot 3; 3.3. Research giải pháp đã có.
+- 4.2. Quy trình tương lai.
+- 6. Mức can thiệp AI.
+- 8.2. Kết luận.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Pitch 3 card (#7, #8, #9) và đặt câu hỏi phản biện cho các card #1–#5.
+- Phỏng vấn 1 trưởng nhóm đồ án sinh viên, ghi Snapshot 3; viết đoạn "Nhóm đã sửa problem thế nào sau kiểm chứng".
+- Research Jira, Linear, Standuply và viết "Kết luận Research".
+- Vẽ quy trình tương lai 4 bước (Rule, AI, con người) kèm boundary và fallback.
+- Viết mục 6: ma trận, so sánh 4 mức, AI Canvas, 2 câu PAIR; chọn Workflow với lõi là No AI + Rule.
+- Viết mục 8.2: Go phạm vi nhỏ, pilot 2 tuần, ngưỡng dừng.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- Phần 3.2, 3.3: `c0af0e3` (Kiểm chứng + research giải pháp).
+- Phần 3.3 (Kết luận Research), 4.2: `8a11c1a` (Update discovery and problem framing report).
+- Phần 6: `b5eb1cf` (Complete section 6: AI intervention level (CP6)).
+- Phần 8.2: `80c2dc6` (Shorten section 8.2), `2d6a3d4` (Rewrite section 8.2: decision and stop thresholds).
 
 **Điều mình học được từ phần nhóm:**
 

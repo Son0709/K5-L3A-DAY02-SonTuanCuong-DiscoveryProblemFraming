@@ -145,16 +145,16 @@ HIỆN TẠI — khoảng 40 phút mỗi lần xảy ra (ước lượng)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 3 card: #7 biết đoạn code đầu tiên của bài lab, #8 nắm ý chính tài liệu dài trước buổi học, #9 nhớ cách viết lại code đã chạy được (group_report mục 2.1) | #7 vào shortlist (24 điểm), nhưng nhóm chọn #2 của Sơn. #7, #8, #9 tạo thành cluster C "Hiểu và ghi nhớ kiến thức học" và một phần cluster B |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: #1 "Làm sao gom được deadline từ nhiều ứng dụng?"; #2 "Làm sao để thành viên sắp xếp được lịch dù đã có ứng dụng?" (cùng Tuấn); #3 "Thị trường đã có nhiều ứng dụng tương tự" (cùng Tuấn); #4 "Khác gì so với ChatGPT, Claude?" (cùng Sơn); #5 "Skill do AI sinh có tốt hơn không?" | Câu hỏi ở #3, #4, #5 trở thành lý do loại các candidate này ở mục 2.4 (đã có ứng dụng hoặc công cụ AI làm gần đúng việc đó) |
+| Nhận phản biện | Câu hỏi tôi nhận được: #7 Sơn hỏi "Sinh code gợi ý hay chỉ sinh câu hỏi ôn tập?", Tuấn hỏi "Nếu bài lab không có trong bài giảng thì sao?"; #8 Sơn hỏi "Đọc là nắm hết lý thuyết hay chỉ biết phần quan trọng?", Tuấn hỏi "Có tổng hợp lại kiến thức không?"; #9 Sơn hỏi "AI tự sinh code hay chỉ gợi ý?" | Tôi đã sửa gì: nhận ra card #7 và #9 cùng một gốc là khoảng cách giữa hiểu lý thuyết và tự chia bài thành các bước code, không phải thiếu cú pháp (xem 6.3). Chấp nhận loại #7, #9 vì ChatGPT, Claude đã làm gần đúng việc đó |
+| Gom cluster / cây OST | Tham gia thảo luận cùng nhóm (Sơn ghi chép, theo TEAM.md) | Cluster B và C có card của tôi |
+| Chọn candidate problem | Tham gia chấm điểm 3 candidate trong shortlist (#1, #2, #7) | Nhóm chọn #2 (27 điểm) thay vì #1 (28 điểm) vì #2 còn câu hỏi đáng kiểm chứng về cách định nghĩa "%" |
+| Kiểm chứng / research | Phỏng vấn 1 trưởng nhóm đồ án sinh viên, ghi Snapshot 3. Viết đoạn "Nhóm đã sửa problem thế nào sau kiểm chứng". Phụ trách research CP4 (theo TEAM.md): thêm 3 nguồn Jira, Linear, Standuply và đoạn "Kết luận Research" (commit `c0af0e3`, `8a11c1a`) | Snapshot 3 cho insight chính của bài: "không thiếu nơi ghi task, mà thiếu thước đo % rõ ràng". Bảng research sau đó được thay bằng Trello, Notion (commit `2208890` của Sơn), đoạn "Kết luận Research" của tôi vẫn giữ |
+| Quy trình nhóm | Viết quy trình tương lai mục 4.2: 4 bước (1 Rule, 1 AI, 2 con người), boundary và fallback (commit `8a11c1a`) | Đây là khung Workflow mà mục 6, 7, 8 dùng tiếp |
+| Problem Statement | Người hỗ trợ (Tuấn phụ trách v0 và v1). Phản biện "% sai mà vẫn trông chính xác" được đưa vào metric độ chính xác ở v1 | — |
+| Mức can thiệp AI | Viết mục 6: ma trận, bảng 4 mức, AI Canvas, 2 câu PAIR (commit `b5eb1cf`) | Chọn Workflow nhưng lõi là No AI + Rule; ghi rõ Input chưa có sẵn; pilot tuần 1 chỉ chạy Rule |
+| Quyết định | Viết mục 8.2: Go phạm vi nhỏ, pilot 2 tuần, 4 ngưỡng dừng (commit `80c2dc6`, viết lại ở `2d6a3d4` sau khi bị ghi đè) | Quyết định khớp với 4 rủi ro Trung bình ở 8.1 của Sơn |
 
 ---
 
@@ -166,8 +166,8 @@ HIỆN TẠI — khoảng 40 phút mỗi lần xảy ra (ước lượng)
 | CP2 Problem Card | Nhờ AI đóng vai PM hoài nghi phản biện 3 card | Chỉ ra baseline chỉ dựa trên trí nhớ; card #1 có thể đang nhảy sang AI sớm; card #2 chỉ đo thời gian, không đo mức hiểu | Cho rằng bottleneck card #1 có thể là bước tìm hàm; gợi ý gộp card #3 vào card #1 | Giữ bước "chia bài thành các bước code" là bottleneck (tìm hàm chỉ ~3', tra 1–3 lần/lab); giữ card #3 riêng vì kẹt ở thời điểm khác; thêm kế hoạch bấm giờ thật và metric mức hiểu cho card #2 |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP5–6 Problem Statement | Không dùng (phần này Tuấn phụ trách, tôi chỉ hỗ trợ) | — | — | — |
+| CP6 Mức can thiệp / quyết định | Dùng Claude (Claude Code) soạn nháp mục 6 và mục 8.2 từ dữ liệu có sẵn trong group_report, sau đó nhờ rút gọn | Đối chiếu số liệu giữa các mục (34–51 phút, 1–3 ngày, 1/4 người lo bị giám sát); chỉ ra No AI + Rule đã giải phần chính của bottleneck và Input cho AI chưa có sẵn | Bản đầu quá dài, khó đọc; các ngưỡng dừng 70% và "quá nửa số ngày" là số AI tự đề xuất, không có nguồn dữ liệu | Yêu cầu rút gọn còn khoảng 40 dòng; [Cương tự điền: bạn đã kiểm hoặc đổi ngưỡng nào, giữ hay bỏ ý nào] |
 
 ---
 
@@ -204,4 +204,6 @@ Về khả năng kiểm chứng: Có thể đo lường sự cải thiện bằn
 
 ## 7. Tài liệu tham khảo
 
--
+- Hướng dẫn và bài mẫu: [docs/01-worksheet.md](../../docs/01-worksheet.md), [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md)
+- Research CP4 tôi đã thêm: Atlassian, Agile metrics: https://www.atlassian.com/agile/project-management/metrics; Standuply: https://www.standuply.com/
+- Research nhóm dùng trong bản cuối: Trello checklist: https://support.atlassian.com/trello/docs/adding-checklists-to-cards/; Notion rollups: https://www.notion.com/help/relations-and-rollups

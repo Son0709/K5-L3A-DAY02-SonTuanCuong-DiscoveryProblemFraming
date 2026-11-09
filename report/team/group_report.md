@@ -125,6 +125,8 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 | Mất bao lâu, bao lần? | 1–2 lần/dự án; thường chỉ phát hiện gần cuối deadline; mỗi lần tốn thêm 1–2 ngày để bù |
 | Insight / opportunity rút ra | Người giao việc phát hiện trễ quá muộn |
 
+**Snapshot 2** (người phỏng vấn: Tuấn)
+
 | Trường | Nội dung |
 |---|---|
  Người được hỏi (vai trò, không ghi tên thật) | Học viên |
@@ -134,6 +136,8 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 | Mất bao lâu, bao lần? | Tốn thời gian lặp lại |
 | Insight / opportunity rút ra | Bám sát vào dự án |
 
+
+**Snapshot 3** (người phỏng vấn: Cương)
 
 | Trường | Nội dung |
 |---|---|

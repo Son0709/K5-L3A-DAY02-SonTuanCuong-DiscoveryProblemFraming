@@ -114,23 +114,26 @@ Cách đã dùng: Phỏng vấn. Mỗi thành viên phỏng vấn 1 người, gh
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
+**Snapshot 1** (người phỏng vấn: Sơn)
+
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
+| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng dự án, làm việc với nhân viên thực tập mới |
+| Câu nói đáng nhớ nhất (nguyên văn) | khi hỏi tiến độ, các bạn mới thường trả lời "sắp xong", nhưng gần đến ngày bàn giao mới biết thành viên chưa xong được 60% công việc được giao |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Khoảng 1 tháng trước. Hỏi tiến độ nhận được câu trả lời "sắp xong", đến sát ngày bàn giao mới phát hiện thành viên chưa xong 60% phần việc |
+| Hiện đang xử lý bằng cách nào (workaround)? | Đẩy nhanh tiến độ và đưa thêm thành viên vào dự án |
+| Mất bao lâu, bao lần? | 1–2 lần/dự án; thường chỉ phát hiện gần cuối deadline; mỗi lần tốn thêm 1–2 ngày để bù |
+| Insight / opportunity rút ra | Người giao việc phát hiện trễ quá muộn |
+
+| Trường | Nội dung |
+|---|---|
+ Người được hỏi (vai trò, không ghi tên thật) | |
 | Câu nói đáng nhớ nhất (nguyên văn) | Mình dùng file GG Sheet để theo dõi tiến độ làm việc  |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tháng trước, làm trễ deadline với khách hàng |
 | Hiện đang xử lý bằng cách nào (workaround)? | Mỗi khi xong tick chọn trạng thái trên gg sheet |
 | Mất bao lâu, bao lần? | Tốn thời gian lặp lại |
 | Insight / opportunity rút ra | Bám sát vào dự án |
 
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Học viên |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
 
 | Trường | Nội dung |
 |---|---|

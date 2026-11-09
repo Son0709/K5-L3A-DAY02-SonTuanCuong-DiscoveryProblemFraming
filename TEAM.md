@@ -115,8 +115,6 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Phần 3.3, 4.1–4.3 và trường Actor ở phần 7: `f3dea9a` (cập nhật actor).
 - Phần 7 và 9: `d5441a9` (complete Problem Statement v1 + tiêu chí đánh giá (CP6) Hạn chế và hướng tiếp theo).
 
-> Các mục phụ trách, đóng góp và bằng chứng ở trên được Claude Code tổng hợp từ git log và git blame.
-
 **Điều mình học được từ phần nhóm:**
 
 - Hiểu cách đưa AI vào bài toán 

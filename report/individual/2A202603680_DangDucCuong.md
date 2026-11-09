@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Đặng Đức Cương
+- MSSV: 2A202603680
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Tên nhóm: SonTuanCuong
+- Link repo nhóm: https://github.com/Son0709/K5-L3A-DAY02-SonTuanCuong-DiscoveryProblemFraming
 
 ---
 
@@ -18,7 +18,7 @@
 
 Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng hợp nhiều thông tin** · **Pain từ người khác**.
 
-Tôi scan 5 problem từ quá trình học khóa AI thực chiến (chủ yếu từ bài lab lọc tin nhắn rác bằng ML, DL, Embedding và LLM).
+Tôi scan 5 problem từ quá trình học khóa AI thực chiến (chủ yếu từ bài lab 1 lọc tin nhắn rác bằng ML, DL, Embedding và LLM).
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
@@ -162,8 +162,8 @@ HIỆN TẠI — khoảng 40 phút mỗi lần xảy ra (ước lượng)
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
+| CP1 Scan | Sau khi tự nêu vấn đề "hiểu lý thuyết nhưng khó áp dụng vào code", nhờ AI đưa danh sách tình huống thường gặp để gợi nhớ và diễn đạt lại thành Job Story | Gợi nhớ được các tình huống cụ thể trong lab lọc tin nhắn rác; giúp viết đúng dạng "Khi… tôi muốn… để…" | Đưa nhiều tình huống tôi chưa từng gặp (lỗi cài môi trường Colab, so sánh mô hình…); không có số liệu thật | Chỉ giữ 5 tình huống tôi đã gặp; bỏ các ý chưa gặp hoặc chưa có số liệu; tự điền số phút và tần suất theo ước lượng của mình |
+| CP2 Problem Card | Nhờ AI đóng vai PM hoài nghi phản biện 3 card | Chỉ ra baseline chỉ dựa trên trí nhớ; card #1 có thể đang nhảy sang AI sớm; card #2 chỉ đo thời gian, không đo mức hiểu | Cho rằng bottleneck card #1 có thể là bước tìm hàm; gợi ý gộp card #3 vào card #1 | Giữ bước "chia bài thành các bước code" là bottleneck (tìm hàm chỉ ~3', tra 1–3 lần/lab); giữ card #3 riêng vì kẹt ở thời điểm khác; thêm kế hoạch bấm giờ thật và metric mức hiểu cho card #2 |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
@@ -178,14 +178,25 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có. Trong quá trình thảo luận, nhóm đôi khi nghĩ ngay đến việc xây dựng ứng dụng, sử dụng AI, tạo skill tự động hoặc dùng Notion/Trello để giải quyết vấn đề. Tuy nhiên, nhóm nhận ra rằng chưa xác định rõ nguyên nhân gốc rễ và liệu người dùng có thực sự cần một công cụ mới hay không trong khi hiện nay các công cụ AI đang làm rất tốt những công việc đó cí dụ như CLAUDE, Anti, Gemini, Chatgpt
+Nhóm đã quay lại phân tích quy trình hiện tại, xác định điểm gây khó khăn, tần suất xảy ra và mức độ ảnh hưởng. Ví dụ, với vấn đề AI code sai hướng, nhóm cần làm rõ nguyên nhân là do prompt chưa đủ chi tiết, thiếu User Story hay chưa có Acceptance Criteria, thay vì mặc định phải tạo thêm một công cụ hỗ trợ.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Ban đầu, tôi cho rằng vấn đề bắt đầu viết code cho bài lab chủ yếu xuất phát từ việc chưa biết sử dụng công cụ hoặc chưa hiểu cú pháp. Tuy nhiên, sau khi được phản biện, tôi nhận ra vấn đề sâu hơn là khoảng cách giữa việc hiểu lý thuyết và khả năng chuyển kiến thức thành các bước code cụ thể. Việc không tự viết lại được code đã từng chạy cũng có thể liên quan đến cách học phụ thuộc vào code mẫu. Vì vậy, tôi thay đổi cách nhìn nhận vấn đề: không chỉ cần hướng dẫn viết code mà còn cần giúp người học hiểu và tự thực hiện lại được, tư duy được bài toán mình đang làm
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Điều khó nhất đối với tôi là xác định đúng vấn đề cốt lõi và diễn đạt vấn đề mà không vô tình đưa giải pháp vào câu mô tả.
+Tôi thường có xu hướng nghĩ ngay đến việc cần xây dựng công cụ gì hoặc sử dụng AI như thế nào. Tuy nhiên, một Problem Statement tốt cần thể hiện rõ người gặp vấn đề là ai, họ đang gặp khó khăn gì, trong hoàn cảnh nào và vấn đề đó gây ra ảnh hưởng gì.
+Việc phân biệt giữa nguyên nhân, biểu hiện và hậu quả cũng khá khó. Tôi nhận ra rằng nếu xác định sai vấn đề ngay từ đầu thì dù giải pháp có tốt đến đâu cũng có thể không giải quyết đúng nhu cầu người dùng.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu được làm lại, tôi sẽ dành nhiều thời gian hơn để thu thập bằng chứng thực tế trước khi lựa chọn Top 3 Problems. Tôi sẽ ghi lại tần suất xảy ra, thời gian bị mất, mức độ ảnh hưởng và quy trình hiện tại để tránh đánh giá vấn đề chỉ dựa trên cảm nhận.Tôi cũng sẽ phản biện nhóm mạnh hơn ví dụ như: Về mức độ nghiêm trọng: Vấn đề có thực sự gây ảnh hưởng lớn hay chỉ là sự bất tiện trong quá trình làm việc?
+Về bằng chứng: Những con số đưa ra có được đo lường thực tế hay chỉ là ước lượng?
+Về nguyên nhân: Nhóm đã tìm được nguyên nhân gốc rễ hay mới chỉ mô tả biểu hiện bên ngoài?
+Về giải pháp hiện có: Liệu công cụ sẵn có như ChatGPT, Notion, Trello hoặc checklist đã đủ giải quyết vấn đề chưa, trên thị trường thì có gặp phải vấn đề như thế không và họ đang giải quyết nó như thế nào
+Về khả năng kiểm chứng: Có thể đo lường sự cải thiện bằng những chỉ số cụ thể nào?
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 

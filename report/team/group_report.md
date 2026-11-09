@@ -344,10 +344,10 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Pain có thật: phát hiện chậm sát bàn giao tốn thêm 1–3 ngày, 2/2 người phải tổng hợp tay. Nhưng 1/2 người nói xem task Done là đủ, và Snapshot 2 đã dùng Google Sheet mà vẫn trễ, nên chưa chắc giá trị nằm ở bước AI hơn là ở Rule. Mẫu mới 1–2 người |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Trưởng nhóm chỉ sửa nháp dưới 150 từ nên dễ dùng. Rủi ro nằm ở thành viên: phải cập nhật task đều (giả định #3 chưa kiểm chứng) và 1/4 người được hỏi sợ bị đo đếm thành áp lực |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Trung bình | Công cụ có sẵn (Trello, Notion). Nhưng nghiên cứu mới xác nhận Trello hiển thị % checklist trong một thẻ, chưa xác nhận tự tổng hợp % theo người và dự án; Notion chỉ liệt kê "Percent empty / not empty". Dữ liệu đầu vào chưa có sẵn: hiện việc giao trong chat, chưa chia sub-task, chỉ có sau khi bước 1 chạy được |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Trung bình | Chưa kiểm chi phí và gói của Rovo hoặc Power-Up trả phí; chưa biết có được đưa nội dung chat, ghi chú của thành viên vào công cụ AI không. Người vận hành là trưởng nhóm, nhưng chưa thấy bằng chứng họ duy trì cập nhật đều sau vài tuần |
 
 ### 8.2. Kết luận
 
@@ -367,7 +367,7 @@ Vì sao:
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- 
 
 ## 10. Tài liệu tham khảo
 

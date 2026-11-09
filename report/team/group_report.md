@@ -173,6 +173,14 @@ Việc "chia đầu việc nhỏ và tính % theo số đầu việc xong" đã 
 Nhóm chưa có lý do tự xây một công cụ mới cho bước tính %. Hướng cần kiểm chứng tiếp: định nghĩa "xong" cho từng đầu việc và tín hiệu sớm để phát hiện thành viên chậm.
 ```
 
+
+---
+
+**Kết luận Research**
+- Thực trạng: Phần lớn quy trình đã có công cụ làm tốt (Jira, Linear, Standuply). Không có lý do để tự xây agent.
+- Hướng hợp lý: Rule lấy số liệu thô → AI soạn nháp narrative (dùng Atlassian Rovo hoặc prompt chuẩn) → PM kiểm duyệt → PM gửi.
+- Điểm đổi mới: Khác hoàn toàn định hướng ban đầu ("xây công cụ AI viết báo cáo"), nhóm thu hẹp AI lại chỉ làm nhiệm vụ soạn nháp nhận định từ dữ liệu sẵn có.
+
 ---
 
 ## 4. Quy trình trước/sau (CP5)
@@ -186,7 +194,7 @@ HIỆN TẠI — 5 bước, 5/5 bước thủ công; mỗi lần hỏi tiến đ
 
 [1 Giao nhiệm vụ trong chat: 3'] → [2 Thành viên làm việc: ví dụ 120']
 → [3 Người giao việc nhắn hỏi "xong tới đâu rồi?": 4']
-→ [4 Thành viên trả lời bằng ước lượng cảm tính ("sắp xong"): 10' chờ và hỏi lại] ← BOTTLENECK
+→ [4 Thành viên trả lời bằng ước lượng cảm tính ("sắp xong"): 10' chờ và hỏi lại mỗi lần] ← BOTTLENECK
 → [5 Người giao việc tự quy đổi thành % so với dự án: 3']
 
 Hệ quả (từ phỏng vấn nhóm trưởng): gần ngày bàn giao mới phát hiện thành viên chưa xong (ví dụ 60% chưa xong),
@@ -207,18 +215,31 @@ Hệ quả (từ phỏng vấn nhóm trưởng): gần ngày bàn giao mới ph�
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI — 4 bước: 1 Rule, 1 AI, 2 Con người
 
+[1 Giao nhiệm vụ chuẩn hóa] → [2 Rule thu thập task thô] → [3 AI soạn nháp narrative] → [4 PM kiểm duyệt và gửi đi]
 ```
+
+| Bước | Actor / Cơ chế | Input | Output | Phân loại | Ghi chú / Boundary & Fallback |
+|---:|---|---|---|---|---|
+| 1 | Người giao việc | Yêu cầu dự án | Nhiệm vụ chia thành sub-task có tiêu chí hoàn thành rõ ràng | Con người | Boundary: con người định nghĩa task; AI không tự đổi scope hoặc deadline. |
+| 2 | Rule | Trạng thái task trong bảng công việc | Số liệu thô: % task hoàn thành, số lượng còn lại, tiến độ theo người | Rule | Tự động thu thập theo thời gian thực hoặc theo định kỳ; không suy diễn ngữ nghĩa. |
+| 3 | AI (Rovo / prompt chuẩn) | Dữ liệu thô từ Bước 2 | Bản nháp nhận định tiến độ và % đóng góp | AI | AI chỉ tóm tắt, giải thích ngắn gọn và viết narrative; không thay đổi dữ liệu gốc hoặc tự quyết định deadline. |
+| 4 | PM | Bản nháp từ AI | Báo cáo tiến độ đã được kiểm duyệt và gửi đi | Con người (HITL) | Fallback: nếu AI sai, PM sửa tay bằng template trắng hoặc dùng dashboard trực quan thay cho AI. |
+
+**Bottleneck chính sau khi cải thiện:** Giảm từ việc “đoán % bằng cảm tính” sang “xem dữ liệu thô và PM duyệt lịch sử” — vẫn cần người thực hiện cập nhật task 1 cách sơ bộ và rõ ràng để dữ liệu đáng tin. |
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 5 | 4 | Theo sơ đồ 4.1 và 4.2. Sơ đồ 4.2 không liệt kê "thành viên làm việc" và "thành viên cập nhật task"; nếu tính cả hai thì là 5 → 6. Lợi ích nằm ở thời gian và độ tin cậy của %, không nằm ở số bước |
+| Tổng thời gian (không tính 120' làm việc) | 34–51'/ngày + 3'/lần giao | khoảng 8'/ngày + khoảng 10'/lần giao | Trước: (4' hỏi + 10' chờ + 3' quy đổi) × 2–3 lần/ngày. Sau: Rule + AI khoảng 1', PM duyệt khoảng 5', thành viên cập nhật task khoảng 2', 1 lần/ngày. Giao việc lâu hơn vì phải chia sub-task và ghi tiêu chí "xong" |
+| Số bước thủ công | 5/5 | 2/4 | Còn lại: người giao việc chia task và PM duyệt. Ngoài 4 bước, thành viên vẫn phải cập nhật task bằng tay |
+| Bottleneck chính | Bước 4: thành viên trả lời "sắp xong" theo cảm tính, 10' chờ và hỏi lại mỗi lần; lệch chỉ lộ ra sát ngày bàn giao, tốn thêm 1–2 ngày để bù | Thành viên cập nhật task đúng và đều; PM duyệt nháp khoảng 5' | PM duyệt là điểm kiểm soát chất lượng nên chấp nhận được. Việc cập nhật đều thuộc giả định #3, chưa kiểm chứng, sẽ theo dõi trong pilot |
+| Rủi ro mới phát sinh | — | (1) AI diễn giải sai hoặc bịa nhận định; (2) task bị đánh dấu "xong" quá sớm khiến % sai nhưng trông như chính xác; (3) Rule tính mọi task ngang nhau nên % đóng góp lệch khi task khác độ lớn; (4) thành viên thấy bị giám sát | (1) AI không đổi dữ liệu gốc, PM duyệt trước khi gửi; nếu sai thì dùng template trắng hoặc dashboard. (2) Tiêu chí "xong" đặt từ bước 1. (3) Người giao việc chia sub-task cỡ tương đương. (4) 1/4 người được phỏng vấn đã lo bị đo đếm thành áp lực, cần kiểm chứng thêm |
+
+Cột "Trước" lấy từ mục 4.1. Cột "Sau" là ước lượng của nhóm vì chưa chạy thử, sẽ bấm giờ trong pilot để xác nhận.
 
 ---
 
@@ -226,16 +247,21 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Trưởng nhóm đồ án sinh viên hoặc dự án nhỏ (3–6 thành viên), người giao việc và chịu trách nhiệm bàn giao đúng hạn |
+| **Quy trình** | Giao nhiệm vụ trong chat → thành viên làm việc → trưởng nhóm nhắn hỏi "xong tới đâu rồi?" → thành viên trả lời bằng ước lượng → trưởng nhóm tự quy đổi thành % nhiệm vụ và % tiến độ dự án |
+| **Bottleneck** | Bước 4: thành viên trả lời theo cảm tính ("sắp xong") vì không có đơn vị chung để tính %, mỗi lần mất khoảng 10 phút chờ và hỏi lại |
+| **Impact** | 34–51 phút/ngày cho mỗi trưởng nhóm (17 phút/lần × 2–3 lần/ngày). Việc chậm chỉ lộ ra sát ngày bàn giao, 1–2 lần/dự án, tốn thêm 1–3 ngày để bù (Snapshot 1 và 3) |
+| **Success Metric** (baseline → target, cách đo) | Tổng thời gian theo dõi tiến độ mỗi ngày. **Baseline:** 34–51 phút/ngày (tính từ mục 4.1, theo mô tả của nhóm và phỏng vấn, chưa bấm giờ). **Target:** dưới 15 phút/ngày. **Cách đo:** trong 2 tuần pilot, trưởng nhóm bấm giờ thời gian hỏi, chờ, quy đổi hoặc duyệt; thành viên ghi số phút cập nhật task; cộng lại theo ngày để không tính thiếu phần việc chuyển sang thành viên |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | **AI không được:** thay đổi dữ liệu gốc (trạng thái task, scope, deadline); tự giao lại việc hoặc chuyển task giữa các thành viên. **HITL:** trưởng nhóm kiểm tra mọi bản nhận định của AI trước khi gửi cho người khác; nếu AI sai thì viết tay bằng template trắng hoặc xem dashboard |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+Phản biện từ AI (Claude), chỉ nêu lỗ hổng, không viết lại:
+
+- Metric chỉ đo tốc độ. Nếu thời gian giảm nhưng % vẫn sai thì trưởng nhóm vẫn phát hiện trễ; cần chỉ số nào để đo độ chính xác
+- Baseline chưa bấm giờ, và 10 phút chờ không phải thời gian trưởng nhóm thực sự làm việc. Gộp vào có làm baseline cao hơn thực tế không
+- Snapshot 2 đã dùng Google Sheet để tick trạng thái mà vẫn trễ deadline. Bottleneck có thật là thiếu đơn vị tính %, hay là thiếu cập nhật và theo dõi
+- "% nhiệm vụ" được tính thế nào khi các đầu việc khác độ lớn?
 
 ---
 

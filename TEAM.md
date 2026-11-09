@@ -12,9 +12,9 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Lê Hoàng Sơn | 2A202603662 | | https://github.com/Son0709 |
-| 2 | | | | https://github.com/cuong281 |
-| 3 | Vũ Hải Tuấn| 2A202603689 | | https://github.com/ha1tuan |
+| 1 | Lê Hoàng Sơn | 2A202603662 | Nhóm trưởng | https://github.com/Son0709 |
+| 2 | | | Thành viên | https://github.com/cuong281 |
+| 3 | Vũ Hải Tuấn| 2A202603689 | Thành viên | https://github.com/ha1tuan |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 

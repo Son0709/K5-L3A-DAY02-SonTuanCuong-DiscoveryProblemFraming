@@ -152,6 +152,9 @@ Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
+|Phỏng vấn|4|3/4 phải tự báo cáo “xong bao nhiêu %” bằng cảm tính, cuối ngày mới nhớ lại|1/4 nói chat nhóm báo cáo nhanh là đủ, sợ bị đo đếm thành áp lực|
+|Phỏng vấn|2|2/2 phải tổng hợp tay từ Jira/Excel/chat để biết ai làm gì. Cả hai muốn biết ai đang quá tải|1/2 nói chỉ cần xem task Done trên board, không cần thêm % đóng góp|
+|Phỏng vấn|2|2/2 muốn biết dự án đang tới đâu, cần con số tiến độ tổng thể|2/2 không quan tâm từng người, chỉ quan tâm tiến độ và tính năng giao đúng hạn|
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 Thu hẹp từ "tự động hóa báo cáo tiến độ" thành "soạn nháp nhận định và quy đổi % từ task có sẵn", giảm thời gian hỏi lại. Đồng thời bổ sung cách không dùng AI: template chuẩn hóa + dashboard trực quan cho leadership xem tổng quan nhanh. Giả định #3 về cập nhật đều đặn vẫn cần kiểm chứng thêm trong pilot.

@@ -173,6 +173,14 @@ Việc "chia đầu việc nhỏ và tính % theo số đầu việc xong" đã 
 Nhóm chưa có lý do tự xây một công cụ mới cho bước tính %. Hướng cần kiểm chứng tiếp: định nghĩa "xong" cho từng đầu việc và tín hiệu sớm để phát hiện thành viên chậm.
 ```
 
+
+---
+
+**Kết luận Research**
+- Thực trạng: Phần lớn quy trình đã có công cụ làm tốt (Jira, Linear, Standuply). Không có lý do để tự xây agent.
+- Hướng hợp lý: Rule lấy số liệu thô → AI soạn nháp narrative (dùng Atlassian Rovo hoặc prompt chuẩn) → PM kiểm duyệt → PM gửi.
+- Điểm đổi mới: Khác hoàn toàn định hướng ban đầu ("xây công cụ AI viết báo cáo"), nhóm thu hẹp AI lại chỉ làm nhiệm vụ soạn nháp nhận định từ dữ liệu sẵn có.
+
 ---
 
 ## 4. Quy trình trước/sau (CP5)
@@ -186,7 +194,7 @@ HIỆN TẠI — 5 bước, 5/5 bước thủ công; mỗi lần hỏi tiến đ
 
 [1 Giao nhiệm vụ trong chat: 3'] → [2 Thành viên làm việc: ví dụ 120']
 → [3 Người giao việc nhắn hỏi "xong tới đâu rồi?": 4']
-→ [4 Thành viên trả lời bằng ước lượng cảm tính ("sắp xong"): 10' chờ và hỏi lại] ← BOTTLENECK
+→ [4 Thành viên trả lời bằng ước lượng cảm tính ("sắp xong"): 10' chờ và hỏi lại mỗi lần] ← BOTTLENECK
 → [5 Người giao việc tự quy đổi thành % so với dự án: 3']
 
 Hệ quả (từ phỏng vấn nhóm trưởng): gần ngày bàn giao mới phát hiện thành viên chưa xong (ví dụ 60% chưa xong),
@@ -207,8 +215,19 @@ Hệ quả (từ phỏng vấn nhóm trưởng): gần ngày bàn giao mới ph�
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI — 4 bước: 1 Rule, 1 AI, 2 Con người
 
+[1 Giao nhiệm vụ chuẩn hóa] → [2 Rule thu thập task thô] → [3 AI soạn nháp narrative] → [4 PM kiểm duyệt và gửi đi]
 ```
+
+| Bước | Actor / Cơ chế | Input | Output | Phân loại | Ghi chú / Boundary & Fallback |
+|---:|---|---|---|---|---|
+| 1 | Người giao việc | Yêu cầu dự án | Nhiệm vụ chia thành sub-task có tiêu chí hoàn thành rõ ràng | Con người | Boundary: con người định nghĩa task; AI không tự đổi scope hoặc deadline. |
+| 2 | Rule | Trạng thái task trong bảng công việc | Số liệu thô: % task hoàn thành, số lượng còn lại, tiến độ theo người | Rule | Tự động thu thập theo thời gian thực hoặc theo định kỳ; không suy diễn ngữ nghĩa. |
+| 3 | AI (Rovo / prompt chuẩn) | Dữ liệu thô từ Bước 2 | Bản nháp nhận định tiến độ và % đóng góp | AI | AI chỉ tóm tắt, giải thích ngắn gọn và viết narrative; không thay đổi dữ liệu gốc hoặc tự quyết định deadline. |
+| 4 | PM | Bản nháp từ AI | Báo cáo tiến độ đã được kiểm duyệt và gửi đi | Con người (HITL) | Fallback: nếu AI sai, PM sửa tay bằng template trắng hoặc dùng dashboard trực quan thay cho AI. |
+
+**Bottleneck chính sau khi cải thiện:** Giảm từ việc “đoán % bằng cảm tính” sang “xem dữ liệu thô và PM duyệt lịch sử” — vẫn cần người thực hiện cập nhật task 1 cách sơ bộ và rõ ràng để dữ liệu đáng tin. |
 
 ### 4.3. Before / after
 
